@@ -1,0 +1,233 @@
+#loader-container {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: #ecebeb;
+    color: #000000;
+    opacity: 0.99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: table;
+}
+
+.loading-wrapper {
+    display: grid;
+    margin-top: 10%;
+    vertical-align:middle;
+    text-align: center;
+    align-items: center;
+}
+
+.image-wrap {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.loader-img-animation {
+    -webkit-animation: loader-img 2s infinite linear;
+            animation: loader-img 2s infinite linear;
+}
+
+@-webkit-keyframes loader-img {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -20px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes loader-img {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -20px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.image-wrap img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.loader-name {
+    background: linear-gradient(#f5a9e8, #e205c5, #ff6cd3, #f9fbff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.9;
+    text-align: center;
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: -2px;
+    padding-left: 2px;
+    font-family: "Serif";
+    padding-right: 2px;
+    font-weight: 600;
+    margin-top: 12px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.loader-name-animation {
+    -webkit-animation: loader-name 2s 1 ease-in;
+            animation: loader-name 2s 1 ease-in;
+}
+
+@-webkit-keyframes loader-name {
+    0% {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes loader-name {
+    0% {
+        -webkit-transform: translateX(-200px);
+        transform: translateX(-200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.loader-job {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 5px;
+    color: #383131;
+    font-size: 20px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.loader-job-animation {
+    -webkit-animation: loader-job 2s 1 ease-in;
+            animation: loader-job 2s 1 ease-in;
+}
+
+@-webkit-keyframes loader-job {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes loader-job {
+    0% {
+        -webkit-transform: translateX(200px);
+        transform: translateX(200px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+/* Media Queries */
+@media (max-width: 1200px) {
+    .loading-wrapper {
+      margin-top: 18%;
+    }
+}
+
+@media (max-width: 960px) {
+    .loading-wrapper {
+      margin-top: 15%;
+    }
+
+    .image-wrap {
+        width: 60%;
+        max-width: 220px;
+    }
+
+    .image-wrap img {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .loader-name {
+        font-size: 50px;
+    }
+
+    .loader-job {
+        font-size: 21px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .loading-wrapper {
+        margin-top: 23%;
+      }
+
+    .image-wrap {
+        width: 75%;
+        max-width: 200px;
+    }
+
+    .image-wrap img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .loader-name {
+        font-size: 40px;
+    }
+
+    .loader-job {
+        font-size:20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .loading-wrapper {
+        margin-top: 45%;
+      }
+
+    .image-wrap {
+        width: 90%;
+        max-width: 150px;
+    }
+
+    .image-wrap img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    .loader-name {
+        font-size: 35px;
+    }
+
+    .loader-job {
+        font-size: 18px;
+    }
+}
