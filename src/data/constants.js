@@ -220,12 +220,23 @@ export const projects = [
   {
     id: 0,
     title: "PeoplesDex",
-    description: "From Concept to Reality: PeoplesDex - My Internship Journey! After weeks of heads-down coding, I'm thrilled to finally share the fruits of my labor!",
+    description:
+      "From Concept to Reality: PeoplesDex - My Internship Journey! After weeks of heads-down coding, I'm thrilled to finally share the fruits of my labor!",
     image:
       "https://i.ibb.co/0jMkjkS/Capture21.png",
-    tags: ["HTML", "CSS", "JavaScript", "React", "NextJS", "Solidity", "Remix IDE",
-      "Hardhat", "Vanguard", "Etherjs", "ERC20", "Axios", "Account Impersonation",
-      "Custom RainbowKit"],
+    tags:
+      ["HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "NextJS",
+        "Solidity",
+        "Remix IDE",
+        "Hardhat",
+        "Vanguard",
+        "Etherjs",
+        "ERC20",
+        "Axios"],
     category: "web app",
     github: "https://github.com/MehdiKhosa50",
     webapp: "https://peoplesdex.vercel.app/",
