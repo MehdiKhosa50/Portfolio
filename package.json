@@ -1,7 +1,7 @@
 {
   "name": "mehdiportfolio",
   "version": "0.1.0",
-  "homepage": "mehdikhosa.tech",
+  "homepage": "https://mehdikhosa.vercel.app/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
