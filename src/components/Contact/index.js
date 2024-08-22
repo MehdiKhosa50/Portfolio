@@ -123,23 +123,22 @@ const ContactButton = styled.input`
 
 
 const Contact = () => {
-
-  //hooks
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
+  const [error, setError] = useState(null);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     emailjs.sendForm('service_4u4nx3d', 'template_2xbgpqt', form.current, 'swdODUB_bfmu5FnjG')
       .then((result) => {
+        console.log(result.text);
         setOpen(true);
         form.current.reset();
       }, (error) => {
         console.log(error.text);
+        setError("Failed to send email. Please try again.");
       });
   }
-
-
 
   return (
     <Container>
@@ -148,19 +147,26 @@ const Contact = () => {
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
+          <ContactInput placeholder="Your Email" name="from_email" type="email" required />
+          <ContactInput placeholder="Your Name" name="from_name" required />
+          <ContactInput placeholder="Subject" name="subject" required />
+          <ContactInputMessage placeholder="Message" rows="4" name="message" required />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
         <Snackbar
           open={open}
           autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
+          onClose={() => setOpen(false)}
           message="Email sent successfully!"
           severity="success"
         />
+        {error && <Snackbar
+          open={!!error}
+          autoHideDuration={6000}
+          onClose={() => setError(null)}
+          message={error}
+          severity="error"
+        />}
       </Wrapper>
     </Container>
   )
