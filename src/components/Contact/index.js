@@ -118,6 +118,9 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  opacity: ${props => props.disabled ? 0.5 : 1};
+  cursor: ${props => props.disabled ? 'not-allowed' : 'pointer'};
+  transition: opacity 0.3s ease;
 `
 
 
@@ -125,19 +128,39 @@ const ContactButton = styled.input`
 const Contact = () => {
   const [open, setOpen] = useState(false);
   const [error, setError] = useState(null);
+  const [isFormValid, setIsFormValid] = useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    
+    if (!isFormValid) {
+      setError("Please fill in all fields.");
+      return;
+    }
+  
     emailjs.sendForm('service_4u4nx3d', 'template_2xbgpqt', form.current, 'swdODUB_bfmu5FnjG')
       .then((result) => {
         console.log(result.text);
         setOpen(true);
+        setError(null);
         form.current.reset();
+        setIsFormValid(false);  // Reset form validity after successful submission
       }, (error) => {
         console.log(error.text);
         setError("Failed to send email. Please try again.");
       });
+  }
+
+  const checkFormValidity = () => {
+    const formData = new FormData(form.current);
+    for (let [_, value] of formData.entries()) {
+      if (!value.trim()) {
+        setIsFormValid(false);
+        return;
+      }
+    }
+    setIsFormValid(true);
   }
 
   return (
@@ -145,13 +168,13 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit} onChange={checkFormValidity}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" type="email" required />
           <ContactInput placeholder="Your Name" name="from_name" required />
           <ContactInput placeholder="Subject" name="subject" required />
           <ContactInputMessage placeholder="Message" rows="4" name="message" required />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton type="submit" value="Send" disabled={!isFormValid} />
         </ContactForm>
         <Snackbar
           open={open}
