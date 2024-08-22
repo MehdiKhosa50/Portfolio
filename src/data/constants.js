@@ -251,6 +251,31 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Portfolio Website",
+    description:
+      "I made Portfolio Website for myself.",
+    image: "https://i.ibb.co/Cnvxm5k/portfolio.png",
+    tags: [
+      "Html",
+      "CSS",
+      "Material UI",
+      "Javascript",
+      "React",
+    ],
+    category: "web app",
+    github: "https://github.com/MehdiKhosa50/Portfolio",
+    webapp: "https://peoplesdex.vercel.app/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 2,
     title: "Custom Blockchain",
     description:
       "I made a Blockchain for learning purposes. You can test POW functionality here. You can create multiple nodes and send data to each other  by creating different ports!",
@@ -277,7 +302,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "TrustFundDAO",
     description:
       "Created a completely Decentralized App to help people raise funds for their startups.",
@@ -300,7 +325,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "Shopping Website",
     description:
       "Static Shopping Website.I made this in 2021 during the times of learning Asp.net",
