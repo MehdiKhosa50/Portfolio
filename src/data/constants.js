@@ -12,7 +12,7 @@ export const Bio = {
     "I am a disciplined and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/MehdiKhosa50",
   resume:
-    "https://drive.google.com/file/d/11cv9TXv4-UUgSsvHTwbQPkt_NUX4RY89/view",
+    "https://drive.google.com/file/d/1N6M7-EBStnXPDjinuWTJtXBflNr1GU5E/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mehdikhosa/",
   twitter: "https://x.com/MehdiKhosa50",
   instagram: "https://www.instagram.com/mehdikhosa420/",
