@@ -31,8 +31,8 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton  target='display'><IoMdDownload style={{margin :"0 0px -6px", fontSize: "25px"}}/> Resume</ResumeButton>
-                        {/* href={Bio.resume} */}
+                        <ResumeButton href={Bio.resume}  target='display'><IoMdDownload style={{margin :"0 0px -6px", fontSize: "25px"}}/> Resume</ResumeButton>
+                        
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
