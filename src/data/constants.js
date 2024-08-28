@@ -77,13 +77,9 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       },
       {
-        name: "MongoDB",
+        name: "C#",
         image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      },
-      {
-        name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzQbiEz737Lm9TXI7uiIbrOW9ZU7iOi2EJA&s",
       },
     ],
   },
@@ -94,6 +90,11 @@ export const skills = [
         name: "Solidity",
         image:
           "https://www.logo.wine/a/logo/Solidity/Solidity-Logo.wine.svg",
+      },
+      {
+        name: "Javascript",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSod7CJvOSEFdtFtmH1pbaPYSW8M4gXMwsmWA&s",
       },
       {
         name: "Defi",
@@ -109,6 +110,11 @@ export const skills = [
         name: "ERC20,ERC721,ERC1155",
         image:
           "https://image.shutterstock.com/image-photo/image-260nw-683064262.jpg",
+      },
+      {
+        name: "Hardhat",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTse959pVUUK-P0fo7RMGOOULTikIxe_wp1pA&s",
       },
       {
         name: "DEX",
@@ -160,6 +166,11 @@ export const skills = [
         image:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZaVpfhv3kgZA46GoqfVNIFhR6pXIdX4_Rg&s",
       },
+      {
+        name: "Pinata",
+        image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0EdXvJ7W9b0x0CUB0E_lTK6BO34q_TuCJSDAKUSGCyycpk02WtzFbGZ3shcOXb46tbQ4&usqp=CAU",
+      },
     ],
   },
 ];
@@ -168,10 +179,10 @@ export const experiences = [
   {
     id: 0,
     img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
-    role: "FullStack Blockchain Intern",
+    role: "FullStack Blockchain Developer Intern",
     company: "Vanar Blockchain",
     date: "June 2024 - August 2024",
-    desc: "As a Blockchain intern at Vanar, I worked on variety of tools and technologies. I made Dex named as PeoplesDex by using Nextjs and Solidity.",
+    desc: "During my internship at Vanar, I immersed myself in a diverse range of blockchain tools and technologies. The pinnacle of my internship was the development of PeoplesDex, a decentralized exchange (DEX) built using Next.js and Solidity. This project exemplifies my ability to integrate front-end frameworks with smart contract development.",
     skills: [
       "Vanguard",
       "Hardhat",
@@ -185,7 +196,7 @@ export const experiences = [
       "Account Impersonation",
       "Custom RainbowKit",
     ],
-    doc: "",
+    doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
   },
 
 ];
@@ -219,9 +230,9 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "PeoplesDex",
+    title: "PeoplesDex: Internship Project",
     description:
-      "From Concept to Reality: PeoplesDex - My Internship Journey! After weeks of heads-down coding, I'm thrilled to finally share the fruits of my labor!",
+      "Proudly presenting PeoplesDex - the culmination of my intensive internship experience! After weeks of dedicated development, I'm excited to share this project that represents my growth and expertise in blockchain technology.",
     image:
       "https://i.ibb.co/0jMkjkS/Capture21.png",
     tags:
@@ -251,9 +262,9 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Personal Portfolio Website",
     description:
-      "I made Portfolio Website for myself.",
+      "Designed and developed a professional portfolio website to showcase my skills, projects, and achievements. This site serves as a testament to my web development abilities and attention to design aesthetics.",
     image: "https://i.ibb.co/Cnvxm5k/portfolio.png",
     tags: [
       "Html",
@@ -276,9 +287,9 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Custom Blockchain",
+    title: "Custom Blockchain with Proof-of-Work",
     description:
-      "I made a Blockchain for learning purposes. You can test POW functionality here. You can create multiple nodes and send data to each other  by creating different ports!",
+      "Implemented a custom blockchain for educational purposes, featuring a functional Proof-of-Work (PoW) consensus mechanism. This interactive project allows users to create multiple nodes on different ports, simulating a distributed network and enabling data transmission between nodes.",
     image: "https://i.ibb.co/PhrLdjP/custom-Blockchain.png",
     tags: [
       "Html",
@@ -303,9 +314,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "TrustFundDAO",
+    title: "Decentralized FundRaising Application",
     description:
-      "Created a completely Decentralized App to help people raise funds for their startups.",
+      "Engineered a fully decentralized application (DApp) designed to facilitate startup fundraising. This project demonstrates my proficiency in blockchain technology and my ability to create solutions that address real-world financial challenges.",
     image:
       "https://i.ibb.co/7JrVks9/Trust-Fund-DAO.png",
     tags: [
@@ -326,9 +337,9 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Shopping Website",
+    title: "Static Shopping Website (2021)",
     description:
-      "Static Shopping Website.I made this in 2021 during the times of learning Asp.net",
+      "Developed a static e-commerce website during my early learning phase with ASP.NET. This project showcased my ability to create functional web applications and laid the foundation for my web development skills.",
     image:
       "https://i.ibb.co/5Bypm9B/shopping.png",
     tags: ["HTML", "CSS", "Bootstrap", "javascript", "JQuery"],
