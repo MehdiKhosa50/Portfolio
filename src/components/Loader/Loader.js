@@ -6,7 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
-import HeroImg from '../../images/HeroImage.jpeg'
+import HeroImg from '../../images/HeroImage.jpg'
 
 const Loader = () => {
     const handleIconClick = (url) => {
