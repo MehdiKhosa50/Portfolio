@@ -314,6 +314,57 @@ export const projects = [
   },
   {
     id: 3,
+    title: "StakingDapp",
+    description:
+      "A Solidity-based staking system that allows users to stake ERC20 tokens and earn rewards over time. Built with Hardhat, this project implements secure staking, withdrawal, and reward claiming functionalities, complete with comprehensive testing.",
+    image:
+      "https://i.ibb.co/SQ7RLpx/Staking-Dapp.png",
+    tags: [
+      "Solidity",
+      "JavaScript",
+      "Remix IDE",
+      "Smart Contracts",
+      "Hardhat"  
+    ],
+    category: "web app",
+    github: "https://github.com/MehdiKhosa50/PeoplesStakingDapp",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "FlashLoans",
+    description:
+      "I created flash loans by forking the Binance Smart Chain Mainnet Network and integrating the Uniswap protocol. This implementation allows seamless borrowing and arbitrage opportunities using Uniswap's infrastructure.",
+    image:
+      "https://i.ibb.co/vdQvb8N/Flash-Loans.png",
+    tags: [
+      "Solidity",
+      "JavaScript",
+      "Uniswap Protocol",
+      "PancakeSwap",
+      "Forked BSCMainnet",
+      "Hardhat"  
+    ],
+    category: "web app",
+    github: "https://github.com/MehdiKhosa50/Flash-Loans",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "Decentralized FundRaising Application",
     description:
       "Engineered a fully decentralized application (DApp) designed to facilitate startup fundraising. This project demonstrates my proficiency in blockchain technology and my ability to create solutions that address real-world financial challenges.",
@@ -336,7 +387,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Static Shopping Website (2021)",
     description:
       "Developed a static e-commerce website during my early learning phase with ASP.NET. This project showcased my ability to create functional web applications and laid the foundation for my web development skills.",
