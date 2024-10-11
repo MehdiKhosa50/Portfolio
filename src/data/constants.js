@@ -52,11 +52,10 @@ export const skills = [
         image:
           "https://marcbruederlin.gallerycdn.vsassets.io/extensions/marcbruederlin/next-icons/0.0.4/1710496760165/Microsoft.VisualStudio.Services.Icons.Default",
       },
-      // {
-      //   name: "Material UI",
-      //   image:
-      //     "https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
-      // },
+      {
+        name: "Material UI",
+        image:"https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
+      },
     ],
   },
   {
@@ -198,7 +197,22 @@ export const experiences = [
     ],
     doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
   },
-
+  {
+    id: 1,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
+    role: "Blockchain Intern",
+    company: "ArgonTeq Inc",
+    date: "October 2024 - Present",
+    desc: "As an intern at ArgonTeq, I am excited to gain hands-on experience in auditing smart contracts and ensuring their security and efficiency. I will collaborate with a talented team to write robust smart contracts while also developing full-stack applications that leverage blockchain technology. This opportunity allows me to deepen my understanding of decentralized systems and contribute to innovative solutions. I am eager to enhance my skills in smart contract development, blockchain security, and full-stack application design, all while working in a dynamic and challenging environment.",
+    skills: [
+      "Solidity",
+      "Javascript",
+      "Nextjs",
+      "Etherjs",
+      "Hardhat",
+    ],
+    //doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
+  },
 ];
 
 export const education = [
@@ -324,7 +338,7 @@ export const projects = [
       "JavaScript",
       "Remix IDE",
       "Smart Contracts",
-      "Hardhat"  
+      "Hardhat"
     ],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/PeoplesStakingDapp",
@@ -350,7 +364,7 @@ export const projects = [
       "Uniswap Protocol",
       "PancakeSwap",
       "Forked BSCMainnet",
-      "Hardhat"  
+      "Hardhat"
     ],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/Flash-Loans",
