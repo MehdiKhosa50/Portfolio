@@ -15,8 +15,6 @@ export const Bio = {
     "https://drive.google.com/file/d/17KiARhFTvDN_MHHh_rshvTViK_g_9EYC/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mehdikhosa/",
   twitter: "https://x.com/MehdiKhosa50",
-  instagram: "https://www.instagram.com/mehdikhosa420/",
-  facebook: "https://www.facebook.com/profile.php?id=100048841306265",
 };
 
 export const skills = [
