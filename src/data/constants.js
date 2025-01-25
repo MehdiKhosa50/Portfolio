@@ -176,16 +176,14 @@ export const experiences = [
   {
     id: 0,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
-    role: "Blockchain Intern",
+    role: "Blockchain Engineer",
     company: "ArgonTeq Inc",
     date: "January 2025 - Present",
     desc: "As an Blockchain Engineer at ArgonTeq, My responsibilities will include writing smart contracts for EVM-based blockchains, maintaining their security, and performing audits. Additionally, I will be developing the backend using Node.js and integrating it with the frontend.",
     skills: [
       "Solidity",
-      "Javascript",
-      "Nextjs",
-      "Etherjs",
       "Hardhat",
+      "Mongodb Express React Node",
     ],
   },
   {
@@ -204,27 +202,27 @@ export const experiences = [
     ],
   },
   {
-    id: 2,
-    img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
-    role: "FullStack Blockchain Developer Intern",
-    company: "Vanar Blockchain",
-    date: "June 2024 - August 2024",
-    desc: "During my internship at Vanar, I immersed myself in a diverse range of blockchain tools and technologies. The pinnacle of my internship was the development of PeoplesDex, a decentralized exchange (DEX) built using Next.js and Solidity. This project exemplifies my ability to integrate front-end frameworks with smart contract development.",
-    skills: [
-      "Vanguard",
-      "Hardhat",
-      "Solidity",
-      "Javascript",
-      "Nextjs",
-      "Remix IDE",
-      "Etherjs",
-      "ERC20",
-      "Axios",
-      "Account Impersonation",
-      "Custom RainbowKit",
-    ],
-    doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
-  }
+  id: 0,
+  img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
+  role: "Blockchain Developer",
+  company: "Vanar Blockchain",
+  date: "June 2024 - August 2024",
+  desc: "During my internship at Vanar, I immersed myself in a diverse range of blockchain tools and technologies. The pinnacle of my internship was the development of PeoplesDex, a decentralized exchange (DEX) built using Next.js and Solidity. This project exemplifies my ability to integrate front-end frameworks with smart contract development.",
+  skills: [
+    "Vanguard",
+    "Hardhat",
+    "Solidity",
+    "Javascript",
+    "Nextjs",
+    "Remix IDE",
+    "Etherjs",
+    "ERC20",
+    "Axios",
+    "Account Impersonation",
+    "Custom RainbowKit",
+  ],
+  doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
+}
 ];
 
 export const education = [
