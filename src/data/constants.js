@@ -175,6 +175,36 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
+    role: "Blockchain Intern",
+    company: "ArgonTeq Inc",
+    date: "January 2025 - Present",
+    desc: "As an Blockchain Engineer at ArgonTeq, My responsibilities will include writing smart contracts for EVM-based blockchains, maintaining their security, and performing audits. Additionally, I will be developing the backend using Node.js and integrating it with the frontend.",
+    skills: [
+      "Solidity",
+      "Javascript",
+      "Nextjs",
+      "Etherjs",
+      "Hardhat",
+    ],
+  },
+  {
+    id: 1,
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
+    role: "Blockchain Intern",
+    company: "ArgonTeq Inc",
+    date: "October 2024 - Present",
+    desc: "As an intern at ArgonTeq, I am excited to gain hands-on experience in auditing smart contracts and ensuring their security and efficiency. I will collaborate with a talented team to write robust smart contracts while also developing full-stack applications that leverage blockchain technology. This opportunity allows me to deepen my understanding of decentralized systems and contribute to innovative solutions. I am eager to enhance my skills in smart contract development, blockchain security, and full-stack application design, all while working in a dynamic and challenging environment.",
+    skills: [
+      "Solidity",
+      "Javascript",
+      "Nextjs",
+      "Etherjs",
+      "Hardhat",
+    ],
+  },
+  {
+    id: 2,
     img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
     role: "FullStack Blockchain Developer Intern",
     company: "Vanar Blockchain",
@@ -194,23 +224,7 @@ export const experiences = [
       "Custom RainbowKit",
     ],
     doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
-  },
-  {
-    id: 1,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
-    role: "Blockchain Intern",
-    company: "ArgonTeq Inc",
-    date: "October 2024 - Present",
-    desc: "As an intern at ArgonTeq, I am excited to gain hands-on experience in auditing smart contracts and ensuring their security and efficiency. I will collaborate with a talented team to write robust smart contracts while also developing full-stack applications that leverage blockchain technology. This opportunity allows me to deepen my understanding of decentralized systems and contribute to innovative solutions. I am eager to enhance my skills in smart contract development, blockchain security, and full-stack application design, all while working in a dynamic and challenging environment.",
-    skills: [
-      "Solidity",
-      "Javascript",
-      "Nextjs",
-      "Etherjs",
-      "Hardhat",
-    ],
-    //doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
-  },
+  }
 ];
 
 export const education = [
