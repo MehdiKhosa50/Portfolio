@@ -191,7 +191,7 @@ export const experiences = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
     role: "Blockchain Intern",
     company: "ArgonTeq Inc",
-    date: "October 2024 - Present",
+    date: "October 2024 - December 204",
     desc: "As an intern at ArgonTeq, I am excited to gain hands-on experience in auditing smart contracts and ensuring their security and efficiency. I will collaborate with a talented team to write robust smart contracts while also developing full-stack applications that leverage blockchain technology. This opportunity allows me to deepen my understanding of decentralized systems and contribute to innovative solutions. I am eager to enhance my skills in smart contract development, blockchain security, and full-stack application design, all while working in a dynamic and challenging environment.",
     skills: [
       "Solidity",
