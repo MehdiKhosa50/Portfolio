@@ -80,7 +80,7 @@ const index = () => {
             <Wrapper>
                 <Title>Experience</Title>
                 <Desc>
-                My work experience as a Blockchain Engineer includes working in Vanar and on different projects.
+                I have worked as a Blockchain Engineer at Vanar and am currently employed at ArgonTeq Inc.. Additionally, I have contributed to various projects across different blockchain stacks, gaining extensive experience in the field.
                 </Desc>
                 <TimelineSection>
                     <Timeline>
