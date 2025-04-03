@@ -15,6 +15,7 @@ import Education from "./components/Education";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 import Loader from './components/Loader/Loader.js';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -41,32 +42,34 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router>
-        {loading ? (
-          <Loader />
-        ) : (
-          <>
-            <Navbar />
-            <Body>
-              <HeroSection />
-              <Wrapper>
-                <Skills />
-                <Experience />
-              </Wrapper>
-              <Projects openModal={openModal} setOpenModal={setOpenModal} />
-              <Wrapper>
-                <Education />
-                <Contact />
-              </Wrapper>
-              <Footer />
-              {openModal.state && (
-                <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-              )}
-            </Body>
-          </>
-        )}
-      </Router>
-    </ThemeProvider>
+  <Router>
+    {loading ? (
+      <Loader />
+    ) : (
+      <>
+        <Navbar />
+        <Body>
+          <HeroSection />
+          <Wrapper>
+            <Skills />
+            <Experience />
+          </Wrapper>
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Wrapper>
+            <Education />
+            <Contact />
+          </Wrapper>
+          <Footer />
+          {openModal.state && (
+            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+          )}
+        </Body>
+        <SpeedInsights /> {/* ✅ Add this here */}
+      </>
+    )}
+  </Router>
+</ThemeProvider>
+
   );
 }
 
