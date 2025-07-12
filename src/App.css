@@ -16,26 +16,548 @@ body{
   margin: 0px !important;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Global background effects */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(133, 76, 230, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(19, 173, 199, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(148, 93, 214, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 4px;
+    width: 8px;
     height: 80px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background:#222A35;
+    background: #1a1a2e;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #575C66;
+    background: linear-gradient(45deg, #854CE6, #13ADC7);
     border-radius: 6px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #626970;
+    background: linear-gradient(45deg, #13ADC7, #945DD6);
   }
+
+/* Advanced Scroll Animations */
+.scroll-glitch {
+  animation: glitchEffect 0.3s ease-in-out;
+}
+
+/* Enhanced body scroll effect */
+body.scroll-glitch {
+  filter: contrast(1.1) brightness(1.05);
+  transition: all 0.3s ease;
+}
+
+@keyframes glitchEffect {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(90deg);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+    filter: hue-rotate(180deg);
+  }
+  60% {
+    transform: translate(2px, 2px);
+    filter: hue-rotate(270deg);
+  }
+  80% {
+    transform: translate(2px, -2px);
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    transform: translate(0);
+    filter: hue-rotate(0deg);
+  }
+}
+
+/* Particle Effects */
+.scroll-particle {
+  box-shadow: 0 0 10px rgba(133, 76, 230, 0.8);
+  animation: particleGlow 0.8s ease-in-out;
+}
+
+@keyframes particleGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(133, 76, 230, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(133, 76, 230, 1), 0 0 30px rgba(19, 173, 199, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(133, 76, 230, 0.3);
+  }
+}
+
+/* Navigation Link Animations */
+.NavLink.scrolling {
+  animation: linkPulse 0.5s ease-in-out;
+  position: relative;
+}
+
+.NavLink.scrolling::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #854CE6, #13ADC7, #945DD6);
+  border-radius: 8px;
+  opacity: 0.2;
+  animation: linkGlow 0.5s ease-in-out;
+}
+
+@keyframes linkPulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes linkGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+/* Matrix Digital Rain Effect */
+.matrix-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.matrix-rain.active {
+  opacity: 0.15;
+}
+
+.matrix-rain::before {
+  content: '01';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #00ff00;
+  line-height: 14px;
+  animation: matrixFall 3s linear infinite;
+  text-shadow: 0 0 5px #00ff00;
+}
+
+.matrix-rain::after {
+  content: '10';
+  position: absolute;
+  top: -40px;
+  left: 20%;
+  width: 100%;
+  height: 100%;
+  font-family: 'Courier New', monospace;
+  font-size: 12px;
+  color: #13ADC7;
+  line-height: 12px;
+  animation: matrixFall 2.5s linear infinite;
+  text-shadow: 0 0 3px #13ADC7;
+  animation-delay: 0.5s;
+}
+
+@keyframes matrixFall {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
+
+/* Additional matrix columns */
+.matrix-rain .matrix-column {
+  position: absolute;
+  top: -50px;
+  font-family: 'Courier New', monospace;
+  font-size: 10px;
+  color: #854CE6;
+  line-height: 10px;
+  animation: matrixFall 4s linear infinite;
+  text-shadow: 0 0 2px #854CE6;
+}
+
+.matrix-rain .matrix-column:nth-child(1) { left: 10%; animation-delay: 0s; }
+.matrix-rain .matrix-column:nth-child(2) { left: 30%; animation-delay: 1s; }
+.matrix-rain .matrix-column:nth-child(3) { left: 50%; animation-delay: 2s; }
+.matrix-rain .matrix-column:nth-child(4) { left: 70%; animation-delay: 0.5s; }
+.matrix-rain .matrix-column:nth-child(5) { left: 90%; animation-delay: 1.5s; }
+
+/* Scanning Line Effect */
+.scan-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #854CE6, #13ADC7, transparent);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  animation: scanLine 1.5s ease-in-out;
+  box-shadow: 0 0 20px rgba(133, 76, 230, 0.8);
+}
+
+/* Audio Wave Effect */
+.audio-wave {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 40px;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  animation: audioWave 1.5s ease-in-out;
+}
+
+.audio-wave::before,
+.audio-wave::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to top, #854CE6, #13ADC7);
+  border-radius: 2px;
+  animation: wavePulse 0.5s ease-in-out infinite;
+}
+
+.audio-wave::before {
+  left: 10px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.audio-wave::after {
+  right: 10px;
+  height: 30px;
+  animation-delay: 0.2s;
+}
+
+@keyframes audioWave {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes wavePulse {
+  0%, 100% {
+    height: 20px;
+    opacity: 0.7;
+  }
+  50% {
+    height: 40px;
+    opacity: 1;
+  }
+}
+
+@keyframes scanLine {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(50vh);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
+
+/* Holographic Effect for Active Links */
+.NavLink:hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.NavLink:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: holographicSweep 0.6s ease-in-out;
+}
+
+@keyframes holographicSweep {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Futuristic Button Hover Effect */
+.GitHubButton:hover {
+  position: relative;
+  overflow: hidden;
+}
+
+.GitHubButton:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #854CE6, #13ADC7, #945DD6);
+  opacity: 0;
+  animation: buttonGlow 0.3s ease-in-out forwards;
+}
+
+@keyframes buttonGlow {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+/* Holographic Cursor Effect */
+.holographic-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #854CE6;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  opacity: 0;
+  transition: all 0.1s ease;
+  mix-blend-mode: screen;
+}
+
+.holographic-cursor::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: #13ADC7;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: cursorPulse 1s ease-in-out infinite;
+}
+
+.holographic-cursor::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 1px solid rgba(133, 76, 230, 0.3);
+  border-radius: 50%;
+  animation: cursorRipple 2s ease-in-out infinite;
+}
+
+@keyframes cursorPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.5;
+  }
+}
+
+@keyframes cursorRipple {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Global futuristic effects */
+* {
+  box-sizing: border-box;
+}
+
+/* Glowing borders for sections */
+section {
+  position: relative;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(133, 76, 230, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+section:hover::before {
+  opacity: 1;
+}
+
+/* Enhanced text effects */
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 0 10px rgba(133, 76, 230, 0.3);
+}
+
+/* Card hover effects */
+.card, .project-card, .skill-card {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover, .project-card:hover, .skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(133, 76, 230, 0.2);
+}
+
+.card::before, .project-card::before, .skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.card:hover::before, .project-card:hover::before, .skill-card:hover::before {
+  left: 100%;
+}
+
+/* Floating animation for elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glitch text effect */
+.glitch-text {
+  position: relative;
+  animation: glitchText 2s infinite;
+}
+
+@keyframes glitchText {
+  0%, 90%, 100% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    transform: translate(2px, 2px);
+  }
+  30% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(2px, -2px);
+  }
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+  .scroll-particle {
+    width: 3px !important;
+    height: 3px !important;
+  }
+  
+  .matrix-rain::before {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  
+  .holographic-cursor {
+    display: none;
+  }
+  
+  .floating {
+    animation: none;
+  }
+}

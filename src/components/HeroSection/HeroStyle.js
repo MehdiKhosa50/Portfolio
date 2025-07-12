@@ -2,7 +2,7 @@ import _default from "../../themes/default";
 import styled, { keyframes } from 'styled-components';
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
+  background: transparent;
   display: flex;
   justify-content: center;
   position: relative;
@@ -14,6 +14,8 @@ export const HeroContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
+  min-height: 100vh;
+  align-items: center;
 
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;

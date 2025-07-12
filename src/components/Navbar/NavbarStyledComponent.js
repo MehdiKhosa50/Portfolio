@@ -67,25 +67,54 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-family: "Serif";
   text-decoration: none;
-  display: flex; /* Add flex display */
-  align-items: center; /* Align items in the center */
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
   
   &:hover {
     background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(133, 76, 230, 0.3);
   }
 
   &.active {
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 
+  &.scrolling {
+    animation: navLinkPulse 0.5s ease-in-out;
+  }
+
   svg {
     margin-right: 8px; 
     font-size: 20px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover svg {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 0 8px rgba(133, 76, 230, 0.8));
+  }
+
+  @keyframes navLinkPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(133, 76, 230, 0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 `;
 

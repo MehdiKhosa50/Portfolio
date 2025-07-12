@@ -4,17 +4,17 @@ export default {
       title: "Space Grotesk, sans-serif",
       main: "Space Grotesk, sans-serif"
     },
-    // Colors for layout
+    // Colors for layout - Futuristic Dark Theme
     colors: {
       primary1: "#854CE6",
-      background1: "#222A35",
+      background1: "#0a0a0a",
       button: "#854CE6",
-      background2: "#19212C",
-      text: "#C8CFD8",
-      text1: "#F2F5F7",
-      text2: "#626970",
-      text3: "#575C66",
-      footerBackground: "#00012B"
+      background2: "#1a1a2e",
+      text: "#E8E8E8",
+      text1: "#FFFFFF",
+      text2: "#B8B8B8",
+      text3: "#888888",
+      footerBackground: "#000000"
     },
     // Breakpoints for responsive design
     breakpoints: {

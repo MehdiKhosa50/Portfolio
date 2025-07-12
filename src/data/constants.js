@@ -254,6 +254,112 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "BCoinBets",
+    description:
+      "Bet on Bitcoin.Win with Friends.Make predictions on Bitcoin's price movements and compete with your friends in a secure, transparent environment.",
+      image:
+      "https://i.ibb.co/rf0DMwxZ/BCoin-Bets.png",
+    tags:
+      [
+        "MERN Stack",
+        "Solidity",
+        "Hardhat",
+        "Polygon Mainnet",
+        "Etherjs",],
+    category: "client projects",
+    webapp: "https://bcoinbets.com/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: "Katana Marketplace",
+    description:
+      "Katana Marketplace is a decentralized NFT marketplace built using Sequence. It enables seamless wallet integration, gasless transactions, and smooth NFT minting and trading. Designed for scalability and user-friendliness, Katana delivers a secure and modern Web3 experience.",
+      image:
+      "https://i.ibb.co/fdkWHwn4/Katana.png",
+    tags:
+      [
+        "Sequence",
+        "NFT Marketplace",
+        "Wallet Integration",
+        "OpenSea NFTs",
+        "Gasless Transactions",
+        "Minting",
+        "Trading",
+        "Scalability",
+        "User-Friendliness",],
+    category: "client projects",
+    webapp: "https://lively-guinea-pig-41628.sequence.market/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "NFT Marketplace on SUI Blockchain",
+    description:
+      "NFT Marketplace on SUI Blockchain is a decentralized platform that allows users to create, buy, and sell NFTs. Built using the SUI blockchain, it offers fast transactions, low fees, and a user-friendly interface.",
+      image:
+        "https://i.ibb.co/W406hgCD/SUI.jpg",
+    tags:
+      [
+        "SUI Blockchain",
+        "NFT Marketplace",
+        "Decentralized",
+        "Bulk Minting",
+        "Fast Transactions",
+        "Low Fees",
+        "User-Friendly Interface",],
+    category: "client projects",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Mynty AI Tech Solutions",
+    description:
+      "Bridge Mining Machines reward of BTC, ETC, DOGECOIN, and XMR to USDT on Polygon Blockchain and then send reward to the investors of the mining machines.",
+      image:
+      "https://i.ibb.co/B2DH54gz/Bridge.png",
+    tags:
+      [
+        "Bridge",
+        "Mining Machines",
+        "ChangeNow Api Integration",
+        "Nextjs",
+        "Nestjs",
+        "PostgreSQL",
+        "Etherjs",],
+    category: "client projects",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 0,
     title: "PeoplesDex: Internship Project",
     description:
       "Proudly presenting PeoplesDex - the culmination of my intensive internship experience! After weeks of dedicated development, I'm excited to share this project that represents my growth and expertise in blockchain technology.",
