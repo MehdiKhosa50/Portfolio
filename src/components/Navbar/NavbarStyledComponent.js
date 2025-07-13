@@ -89,8 +89,12 @@ export const NavLink = styled.a`
     border-bottom: 2px solid ${({ theme }) => theme.primary};
   }
 
-  &.scrolling {
-    animation: navLinkPulse 0.5s ease-in-out;
+  &.active {
+    background: linear-gradient(45deg, #854CE6, #13ADC7, #945DD6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(133, 76, 230, 0.3);
   }
 
   svg {
@@ -104,17 +108,9 @@ export const NavLink = styled.a`
     filter: drop-shadow(0 0 8px rgba(133, 76, 230, 0.8));
   }
 
-  @keyframes navLinkPulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(133, 76, 230, 0.5);
-    }
-    100% {
-      transform: scale(1);
-    }
+  &.active svg {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(133, 76, 230, 1));
   }
 `;
 

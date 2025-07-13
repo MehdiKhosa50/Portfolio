@@ -41,13 +41,16 @@ const HeroBgAnimation = () => {
         this.angle += this.angleSpeed;
         this.life -= this.decay;
 
+        // Desktop: Keep particles in left 60% of screen
+        const maxX = window.innerWidth <= 960 ? canvas.width : canvas.width * 0.6;
+        
         // Bounce off edges
-        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+        if (this.x < 0 || this.x > maxX) this.speedX *= -1;
         if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
 
         // Wrap around
-        if (this.x < 0) this.x = canvas.width;
-        if (this.x > canvas.width) this.x = 0;
+        if (this.x < 0) this.x = 0;
+        if (this.x > maxX) this.x = maxX;
         if (this.y < 0) this.y = canvas.height;
         if (this.y > canvas.height) this.y = 0;
       }
@@ -124,20 +127,22 @@ const HeroBgAnimation = () => {
     const particles = [];
     const connections = [];
     
-    // Create orbs
+    // Create orbs - only in left area on desktop
+    const maxX = window.innerWidth <= 960 ? window.innerWidth : window.innerWidth * 0.6;
+    
     for (let i = 0; i < 30; i++) {
       particles.push(new Particle(
-        Math.random() * canvas.width,
-        Math.random() * canvas.height,
+        Math.random() * maxX,
+        Math.random() * window.innerHeight,
         'orb'
       ));
     }
 
-    // Create data streams
+    // Create data streams - only in left area on desktop
     for (let i = 0; i < 50; i++) {
       particles.push(new Particle(
-        Math.random() * canvas.width,
-        Math.random() * canvas.height,
+        Math.random() * maxX,
+        Math.random() * window.innerHeight,
         'stream'
       ));
     }
@@ -154,9 +159,10 @@ const HeroBgAnimation = () => {
 
         // Remove dead particles and create new ones
         if (particle.life <= 0) {
+          const newMaxX = window.innerWidth <= 960 ? window.innerWidth : window.innerWidth * 0.6;
           particles[index] = new Particle(
-            Math.random() * canvas.width,
-            Math.random() * canvas.height,
+            Math.random() * newMaxX,
+            Math.random() * window.innerHeight,
             particle.type
           );
         }
@@ -180,14 +186,14 @@ const HeroBgAnimation = () => {
         connection.draw();
       });
 
-      // Draw gradient overlay
-      const gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      // Draw gradient overlay - only on left side for desktop
+      const gradient = ctx.createLinearGradient(0, 0, maxX, canvas.height);
       gradient.addColorStop(0, 'rgba(133, 76, 230, 0.1)');
       gradient.addColorStop(0.5, 'rgba(19, 173, 199, 0.1)');
       gradient.addColorStop(1, 'rgba(148, 93, 214, 0.1)');
       
       ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.fillRect(0, 0, maxX, canvas.height);
 
       animationId = requestAnimationFrame(animate);
     };

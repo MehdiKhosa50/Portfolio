@@ -43,12 +43,22 @@ export const Div = styled.div`
   overflow: hidden;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
 
-  /* Floating geometric shapes */
+  /* Canvas positioning - only on left side for desktop */
+  canvas {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 60% !important;
+    height: 100% !important;
+    z-index: -1;
+  }
+
+  /* Floating geometric shapes - positioned to avoid profile image */
   .floating-shapes {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     pointer-events: none;
     z-index: 1;
@@ -72,7 +82,7 @@ export const Div = styled.div`
 
   .shape-2 {
     top: 60%;
-    right: 15%;
+    left: 15%;
     width: 80px;
     height: 80px;
     background: linear-gradient(45deg, #13ADC7, #945DD6);
@@ -92,7 +102,7 @@ export const Div = styled.div`
 
   .shape-4 {
     top: 40%;
-    left: 60%;
+    left: 40%;
     width: 50px;
     height: 50px;
     background: linear-gradient(45deg, #854CE6, #13ADC7);
@@ -102,7 +112,7 @@ export const Div = styled.div`
 
   .shape-5 {
     bottom: 20%;
-    right: 30%;
+    left: 30%;
     width: 70px;
     height: 70px;
     background: linear-gradient(45deg, #13ADC7, #945DD6);
@@ -110,12 +120,12 @@ export const Div = styled.div`
     animation-delay: -7s;
   }
 
-  /* Data grid overlay */
+  /* Data grid overlay - only on left side */
   .data-grid {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     background-image: 
       linear-gradient(rgba(133, 76, 230, 0.1) 1px, transparent 1px),
@@ -126,11 +136,11 @@ export const Div = styled.div`
     z-index: 0;
   }
 
-  /* Pulse rings */
+  /* Pulse rings - positioned to avoid profile image */
   .pulse-rings {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 2;
@@ -163,8 +173,24 @@ export const Div = styled.div`
     animation-delay: -3s;
   }
 
-  /* Responsive design */
-  @media (max-width: 768px) {
+  /* Mobile responsive - full width on mobile */
+  @media (max-width: 960px) {
+    canvas {
+      width: 100% !important;
+    }
+    
+    .floating-shapes {
+      width: 100%;
+    }
+    
+    .data-grid {
+      width: 100%;
+    }
+    
+    .pulse-rings {
+      left: 50%;
+    }
+    
     .shape {
       transform: scale(0.7);
     }

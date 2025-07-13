@@ -17,7 +17,10 @@ const HeroSection = () => {
                 </HeroBg>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, It's <br /> <span className='name'>{Bio.name}</span></Title>
+                        <Title>
+                            Hi, It's <br /> 
+                            <span className='name'>{Bio.name}</span>
+                        </Title>
                         <TextLoop>
                             I'm a
                             <Span>
@@ -31,16 +34,16 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume}  target='display'><IoMdDownload style={{margin :"0 0px -6px", fontSize: "25px"}}/> Resume</ResumeButton>
-                        
+                        <ResumeButton href={Bio.resume} target='_blank'>
+                            <IoMdDownload style={{fontSize: "20px"}}/>
+                            Download Resume
+                        </ResumeButton>
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">
-
-                    <Img src={HeroImg} alt="hero-image"/>
+                        <Img src={HeroImg} alt="hero-image"/>
                     </HeroRightContainer>
                 </HeroInnerContainer>
-
             </HeroContainer>
         </div>
     )

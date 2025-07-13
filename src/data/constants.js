@@ -52,7 +52,7 @@ export const skills = [
       },
       {
         name: "Material UI",
-        image:"https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
+        image:"https://mui.com/static/logo.png",
       },
     ],
   },
@@ -166,7 +166,7 @@ export const skills = [
       {
         name: "Pinata",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0EdXvJ7W9b0x0CUB0E_lTK6BO34q_TuCJSDAKUSGCyycpk02WtzFbGZ3shcOXb46tbQ4&usqp=CAU",
+          "https://docs.pinata.cloud/img/pinata-logo.svg",
       },
     ],
   },
@@ -359,7 +359,7 @@ export const projects = [
     ],
   },
   {
-    id: 0,
+    id: 4,
     title: "PeoplesDex: Internship Project",
     description:
       "Proudly presenting PeoplesDex - the culmination of my intensive internship experience! After weeks of dedicated development, I'm excited to share this project that represents my growth and expertise in blockchain technology.",
@@ -391,7 +391,7 @@ export const projects = [
     ],
   },
   {
-    id: 1,
+    id: 5,
     title: "Personal Portfolio Website",
     description:
       "Designed and developed a professional portfolio website to showcase my skills, projects, and achievements. This site serves as a testament to my web development abilities and attention to design aesthetics.",
@@ -416,7 +416,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     title: "Custom Blockchain with Proof-of-Work",
     description:
       "Implemented a custom blockchain for educational purposes, featuring a functional Proof-of-Work (PoW) consensus mechanism. This interactive project allows users to create multiple nodes on different ports, simulating a distributed network and enabling data transmission between nodes.",
@@ -443,7 +443,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 7,
     title: "StakingDapp",
     description:
       "A Solidity-based staking system that allows users to stake ERC20 tokens and earn rewards over time. Built with Hardhat, this project implements secure staking, withdrawal, and reward claiming functionalities, complete with comprehensive testing.",
@@ -468,7 +468,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 8,
     title: "FlashLoans",
     description:
       "I created flash loans by forking the Binance Smart Chain Mainnet Network and integrating the Uniswap protocol. This implementation allows seamless borrowing and arbitrage opportunities using Uniswap's infrastructure.",
@@ -494,7 +494,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 9,
     title: "Decentralized FundRaising Application",
     description:
       "Engineered a fully decentralized application (DApp) designed to facilitate startup fundraising. This project demonstrates my proficiency in blockchain technology and my ability to create solutions that address real-world financial challenges.",
@@ -517,7 +517,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 10,
     title: "Static Shopping Website (2021)",
     description:
       "Developed a static e-commerce website during my early learning phase with ASP.NET. This project showcased my ability to create functional web applications and laid the foundation for my web development skills.",
