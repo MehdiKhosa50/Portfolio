@@ -1,8 +1,13 @@
 import React from 'react'
+import { Container, Wrapper } from './AboutStyle'
 
 const About = () => {
   return (
-    <div>About</div>
+    <Container id="about">
+      <Wrapper>
+        About
+      </Wrapper>
+    </Container>
   )
 }
 

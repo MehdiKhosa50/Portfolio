@@ -52,7 +52,7 @@ export const skills = [
       },
       {
         name: "Material UI",
-        image:"https://mui.com/static/logo.png",
+        image: "https://mui.com/static/logo.png",
       },
     ],
   },
@@ -60,23 +60,32 @@ export const skills = [
     title: "Backend",
     skills: [
       {
-        name: "Node Js",
+        name: "Node.js",
         image: "https://nodejs.org/static/images/logo.svg",
       },
       {
-        name: "Express Js",
-        image:
-          "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+        name: "Express.js",
+        image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
       },
       {
-        name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        name: "MongoDB",
+        image: "https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png",
       },
       {
-        name: "C#",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIzQbiEz737Lm9TXI7uiIbrOW9ZU7iOi2EJA&s",
+        name: "Mongoose",
+        image: "https://avatars.githubusercontent.com/u/7552965?s=280&v=4",
+      },
+      {
+        name: "Socket.IO",
+        image: "https://cdn.worldvectorlogo.com/logos/socket-io.svg",
+      },
+      {
+        name: "Redis",
+        image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Redis_Logo.svg",
+      },
+      {
+        name: "NATS",
+        image: "https://nats.io/img/nats-icon-color.png",
       },
     ],
   },
@@ -202,27 +211,27 @@ export const experiences = [
     ],
   },
   {
-  id: 0,
-  img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
-  role: "Blockchain Developer",
-  company: "Vanar Blockchain",
-  date: "June 2024 - August 2024",
-  desc: "During my internship at Vanar, I immersed myself in a diverse range of blockchain tools and technologies. The pinnacle of my internship was the development of PeoplesDex, a decentralized exchange (DEX) built using Next.js and Solidity. This project exemplifies my ability to integrate front-end frameworks with smart contract development.",
-  skills: [
-    "Vanguard",
-    "Hardhat",
-    "Solidity",
-    "Javascript",
-    "Nextjs",
-    "Remix IDE",
-    "Etherjs",
-    "ERC20",
-    "Axios",
-    "Account Impersonation",
-    "Custom RainbowKit",
-  ],
-  doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
-}
+    id: 0,
+    img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
+    role: "Blockchain Developer",
+    company: "Vanar Blockchain",
+    date: "June 2024 - August 2024",
+    desc: "During my internship at Vanar, I immersed myself in a diverse range of blockchain tools and technologies. The pinnacle of my internship was the development of PeoplesDex, a decentralized exchange (DEX) built using Next.js and Solidity. This project exemplifies my ability to integrate front-end frameworks with smart contract development.",
+    skills: [
+      "Vanguard",
+      "Hardhat",
+      "Solidity",
+      "Javascript",
+      "Nextjs",
+      "Remix IDE",
+      "Etherjs",
+      "ERC20",
+      "Axios",
+      "Account Impersonation",
+      "Custom RainbowKit",
+    ],
+    doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
+  }
 ];
 
 export const education = [
@@ -257,7 +266,7 @@ export const projects = [
     title: "BCoinBets",
     description:
       "Bet on Bitcoin.Win with Friends.Make predictions on Bitcoin's price movements and compete with your friends in a secure, transparent environment.",
-      image:
+    image:
       "https://i.ibb.co/rf0DMwxZ/BCoin-Bets.png",
     tags:
       [
@@ -282,7 +291,7 @@ export const projects = [
     title: "Katana Marketplace",
     description:
       "Katana Marketplace is a decentralized NFT marketplace built using Sequence. It enables seamless wallet integration, gasless transactions, and smooth NFT minting and trading. Designed for scalability and user-friendliness, Katana delivers a secure and modern Web3 experience.",
-      image:
+    image:
       "https://i.ibb.co/fdkWHwn4/Katana.png",
     tags:
       [
@@ -311,8 +320,8 @@ export const projects = [
     title: "NFT Marketplace on SUI Blockchain",
     description:
       "NFT Marketplace on SUI Blockchain is a decentralized platform that allows users to create, buy, and sell NFTs. Built using the SUI blockchain, it offers fast transactions, low fees, and a user-friendly interface.",
-      image:
-        "https://i.ibb.co/W406hgCD/SUI.jpg",
+    image:
+      "https://i.ibb.co/W406hgCD/SUI.jpg",
     tags:
       [
         "SUI Blockchain",
@@ -337,7 +346,7 @@ export const projects = [
     title: "Mynty AI Tech Solutions",
     description:
       "Bridge Mining Machines reward of BTC, ETC, DOGECOIN, and XMR to USDT on Polygon Blockchain and then send reward to the investors of the mining machines.",
-      image:
+    image:
       "https://i.ibb.co/B2DH54gz/Bridge.png",
     tags:
       [
