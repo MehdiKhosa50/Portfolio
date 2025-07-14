@@ -324,7 +324,7 @@ export const projects = [
     title: "KatanaInu Play to Earn",
     description:
       "KatanaInu Play-to-Earn Reward System is an on-chain reward distribution engine built for a blockchain-integrated game. The system fetches match results from the KatanaInu game backend, processes player eligibility, and distributes KATA tokens to qualified players through smart contracts. It supports automated reward calculations, secure off-chain to on-chain data syncing (via NATS and Node.js), and ensures fair, gas-efficient token distribution to incentivize gameplay.",
-    image: "https://i.ibb.co/mr1Cq871/Capture.jpg",
+    image: "https://i.ibb.co/b55M0xm8/Katana-Inu-Client-Side.jpg",
     tags: [
       "Ethereum Blockchain",
       "ThirdWeb Wallet Integration",
@@ -341,7 +341,7 @@ export const projects = [
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
-        img: "https://i.ibb.co/b55M0xm8/Katana-Inu-Client-Side.jpg",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
       },
