@@ -284,7 +284,8 @@ export const projects = [
       "Etherjs",
     ],
     category: "client projects",
-    webapp: "https://polygonscan.com/address/0xde283d30ee617b900697b45f816cb8f9e22a5167#code",
+    webapp:
+      "https://polygonscan.com/address/0xde283d30ee617b900697b45f816cb8f9e22a5167#code",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -338,7 +339,8 @@ export const projects = [
       "Nats",
     ],
     category: "client projects",
-    webapp: "https://katanainu-minting-katanainu-com.vercel.app/pages/affiliate",
+    webapp:
+      "https://katanainu-minting-katanainu-com.vercel.app/pages/affiliate",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -353,7 +355,7 @@ export const projects = [
     title: "NFT Marketplace on SUI Blockchain",
     description:
       "NFT Marketplace on SUI Blockchain is a decentralized platform that allows users to create, buy, and sell NFTs. Built using the SUI blockchain, it offers fast transactions, low fees, and a user-friendly interface.",
-    image: "https://i.ibb.co/W406hgCD/SUI.jpg",
+    image: "https://i.ibb.co/rjxncDC/Screenshot-27.png",
     tags: [
       "SUI Blockchain",
       "NFT Marketplace",
@@ -364,6 +366,86 @@ export const projects = [
       "User-Friendly Interface",
     ],
     category: "client projects",
+    webapp:
+      "https://suiscan.xyz/testnet/object/0x508725e3b66a818544d166e09b7cdf3289e16e7d25931ec54cbd01fe30c682b1/tx-blocks",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 14,
+    title: "Telegram HamsterKombat Bot",
+    description:
+      "Integrated TON wallet connection into the web app and created a Telegram bot to streamline user interactions and onboarding.",
+    image: "https://i.ibb.co/prhRwRhn/Hamster-Kombat-Bot.jpg",
+    tags: [
+      "Ton Blockchain",
+      "Ton Wallet Integration",
+      "Ton/wallets",
+      "Ton/core",
+      "Telegram Bot",
+      "FatherBot",
+      "React",
+    ],
+    category: "client projects",
+    webapp: "https://t.me/hamsterkomat_bot",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 15,
+    title: "Mint Jetton Tokens on TON Blockchain",
+    description:
+      "Minted a Jetton token on the TON blockchain using CLI, with AI-assisted smart contract deployment and end-to-end command-line integration.",
+    image: "https://i.ibb.co/FLkpHF0J/Jetton.jpg",
+    tags: [
+      "Ton Blockchain",
+      "Jetton Tokens",
+      "Mint Tokens",
+      "Ton-CLI",
+      "Ton/wallets",
+      "Smart Contract Deployment",
+    ],
+    category: "client projects",
+    webapp:
+      "https://testnet.tonscan.org/jetton/kQAWLhT6AdrxQWPguv0759aleoPm70y2Cg7XGoOUKafp2QKn#transactions",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 16,
+    title: "Mint NFT on TON Blockchain",
+    description:
+      "Deployed an NFT collection on the TON blockchain and minted NFTs using CLI, with AI-assisted contract setup and full command-line deployment flow.",
+    image: "https://i.ibb.co/1fqSBH6x/NFT.jpg",
+    tags: [
+      "Ton Blockchain",
+      "NFT Collection",
+      "Mint NFTs",
+      "Ton-CLI",
+      "Ton/wallets",
+      "Smart Contract Deployment",
+    ],
+    category: "client projects",
+    webapp:
+      "https://testnet.tonscan.org/address/0QCCOmbN2JjxQAvyXqYB6NLMcVUOikf_YVgHJFoAiESLkbnp#nfts",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
