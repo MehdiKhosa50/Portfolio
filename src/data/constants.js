@@ -52,7 +52,8 @@ export const skills = [
       },
       {
         name: "Material UI",
-        image: "https://mui.com/static/logo.png",
+        image:
+          "https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
       },
     ],
   },
@@ -65,11 +66,13 @@ export const skills = [
       },
       {
         name: "Express.js",
-        image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
       },
       {
         name: "MongoDB",
-        image: "https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png",
+        image:
+          "https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png",
       },
       {
         name: "Mongoose",
@@ -81,7 +84,8 @@ export const skills = [
       },
       {
         name: "Redis",
-        image: "https://upload.wikimedia.org/wikipedia/commons/6/64/Redis_Logo.svg",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/6/64/Redis_Logo.svg",
       },
       {
         name: "NATS",
@@ -94,8 +98,7 @@ export const skills = [
     skills: [
       {
         name: "Solidity",
-        image:
-          "https://www.logo.wine/a/logo/Solidity/Solidity-Logo.wine.svg",
+        image: "https://www.logo.wine/a/logo/Solidity/Solidity-Logo.wine.svg",
       },
       {
         name: "Javascript",
@@ -134,8 +137,7 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image:
-          "https://avatars.githubusercontent.com/u/18133?s=200&v=4",
+        image: "https://avatars.githubusercontent.com/u/18133?s=200&v=4",
       },
       {
         name: "GitHub",
@@ -149,8 +151,7 @@ export const skills = [
       },
       {
         name: "Vercel",
-        image:
-          "https://www.svgrepo.com/show/327408/logo-vercel.svg",
+        image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
       },
       {
         name: "VS Code",
@@ -174,8 +175,7 @@ export const skills = [
       },
       {
         name: "Pinata",
-        image:
-          "https://docs.pinata.cloud/img/pinata-logo.svg",
+        image: "https://docs.pinata.cloud/img/pinata-logo.svg",
       },
     ],
   },
@@ -189,11 +189,7 @@ export const experiences = [
     company: "ArgonTeq Inc",
     date: "January 2025 - Present",
     desc: "As an Blockchain Engineer at ArgonTeq, My responsibilities will include writing smart contracts for EVM-based blockchains, maintaining their security, and performing audits. Additionally, I will be developing the backend using Node.js and integrating it with the frontend.",
-    skills: [
-      "Solidity",
-      "Hardhat",
-      "Mongodb Express React Node",
-    ],
+    skills: ["Solidity", "Hardhat", "Mongodb Express React Node"],
   },
   {
     id: 1,
@@ -202,13 +198,7 @@ export const experiences = [
     company: "ArgonTeq Inc",
     date: "October 2024 - December 204",
     desc: "As an intern at ArgonTeq, I am excited to gain hands-on experience in auditing smart contracts and ensuring their security and efficiency. I will collaborate with a talented team to write robust smart contracts while also developing full-stack applications that leverage blockchain technology. This opportunity allows me to deepen my understanding of decentralized systems and contribute to innovative solutions. I am eager to enhance my skills in smart contract development, blockchain security, and full-stack application design, all while working in a dynamic and challenging environment.",
-    skills: [
-      "Solidity",
-      "Javascript",
-      "Nextjs",
-      "Etherjs",
-      "Hardhat",
-    ],
+    skills: ["Solidity", "Javascript", "Nextjs", "Etherjs", "Hardhat"],
   },
   {
     id: 0,
@@ -231,7 +221,7 @@ export const experiences = [
       "Custom RainbowKit",
     ],
     doc: "https://i.ibb.co/tMnG5P1/1723814019513-59fb4796-f392-4ec7-8ed4-5ae1e74c4eae.jpg",
-  }
+  },
 ];
 
 export const education = [
@@ -257,7 +247,6 @@ export const education = [
     date: "2016 - 2018",
     degree: "Matric in Computer Science",
   },
-
 ];
 
 export const projects = [
@@ -266,15 +255,8 @@ export const projects = [
     title: "BCoinBets",
     description:
       "Bet on Bitcoin.Win with Friends.Make predictions on Bitcoin's price movements and compete with your friends in a secure, transparent environment.",
-    image:
-      "https://i.ibb.co/rf0DMwxZ/BCoin-Bets.png",
-    tags:
-      [
-        "MERN Stack",
-        "Solidity",
-        "Hardhat",
-        "Polygon Mainnet",
-        "Etherjs",],
+    image: "https://i.ibb.co/rf0DMwxZ/BCoin-Bets.png",
+    tags: ["MERN Stack", "Solidity", "Hardhat", "Polygon Mainnet", "Etherjs"],
     category: "client projects",
     webapp: "https://bcoinbets.com/",
     member: [
@@ -288,22 +270,125 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Katana Marketplace",
+    title: "Mynty AI Tech Solutions",
+    description:
+      "Bridge Mining Machines reward of BTC, ETC, DOGECOIN, and XMR to USDT on Polygon Blockchain and then send reward to the investors of the mining machines.",
+    image: "https://i.ibb.co/B2DH54gz/Bridge.png",
+    tags: [
+      "Bridge",
+      "Mining Machines",
+      "ChangeNow Api Integration",
+      "Nextjs",
+      "Nestjs",
+      "PostgreSQL",
+      "Etherjs",
+    ],
+    category: "client projects",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "24K GOLD",
+    description:
+      "24K GOLD is a tokenized gold-based investment platform where users earn profits proportionally to their token holdings backed by real paxg gold assets.",
+    image: "https://i.ibb.co/k2j6VJKb/Capture.jpg",
+    tags: [
+      "Ethereum Blockchain",
+      "Tokenized Gold",
+      "Paxg Gold",
+      "Reward System",
+      "React",
+      "Mongodb",
+      "Nodejs",
+    ],
+    category: "client projects",
+    webapp: "https://paxg-fe.vercel.app/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "KatanaInu Play to Earn",
+    description:
+      "KatanaInu Play-to-Earn Reward System is an on-chain reward distribution engine built for a blockchain-integrated game. The system fetches match results from the KatanaInu game backend, processes player eligibility, and distributes KATA tokens to qualified players through smart contracts. It supports automated reward calculations, secure off-chain to on-chain data syncing (via NATS and Node.js), and ensures fair, gas-efficient token distribution to incentivize gameplay.",
+    image: "https://i.ibb.co/mr1Cq871/Capture.jpg",
+    tags: [
+      "Ethereum Blockchain",
+      "ThirdWeb Wallet Integration",
+      "Smart Contract",
+      "KatanaInu Game",
+      "Reward System",
+      "Nextjs",
+      "Mongodb",
+      "Nodejs",
+      "Nats",
+    ],
+    category: "client projects",
+    webapp: "",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/b55M0xm8/Katana-Inu-Client-Side.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "NFT Marketplace on SUI Blockchain",
+    description:
+      "NFT Marketplace on SUI Blockchain is a decentralized platform that allows users to create, buy, and sell NFTs. Built using the SUI blockchain, it offers fast transactions, low fees, and a user-friendly interface.",
+    image: "https://i.ibb.co/W406hgCD/SUI.jpg",
+    tags: [
+      "SUI Blockchain",
+      "NFT Marketplace",
+      "Decentralized",
+      "Bulk Minting",
+      "Fast Transactions",
+      "Low Fees",
+      "User-Friendly Interface",
+    ],
+    category: "client projects",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Katana Marketplace on Sequence",
     description:
       "Katana Marketplace is a decentralized NFT marketplace built using Sequence. It enables seamless wallet integration, gasless transactions, and smooth NFT minting and trading. Designed for scalability and user-friendliness, Katana delivers a secure and modern Web3 experience.",
-    image:
-      "https://i.ibb.co/fdkWHwn4/Katana.png",
-    tags:
-      [
-        "Sequence",
-        "NFT Marketplace",
-        "Wallet Integration",
-        "OpenSea NFTs",
-        "Gasless Transactions",
-        "Minting",
-        "Trading",
-        "Scalability",
-        "User-Friendliness",],
+    image: "https://i.ibb.co/fdkWHwn4/Katana.png",
+    tags: [
+      "Sequence",
+      "NFT Marketplace",
+      "Wallet Integration",
+      "OpenSea NFTs",
+      "Gasless Transactions",
+      "Minting",
+      "Trading",
+      "Scalability",
+      "User-Friendliness",
+    ],
     category: "client projects",
     webapp: "https://lively-guinea-pig-41628.sequence.market/",
     member: [
@@ -316,22 +401,24 @@ export const projects = [
     ],
   },
   {
-    id: 2,
-    title: "NFT Marketplace on SUI Blockchain",
+    id: 6,
+    title: "Katana Marketplace on ThirdWeb",
     description:
-      "NFT Marketplace on SUI Blockchain is a decentralized platform that allows users to create, buy, and sell NFTs. Built using the SUI blockchain, it offers fast transactions, low fees, and a user-friendly interface.",
-    image:
-      "https://i.ibb.co/W406hgCD/SUI.jpg",
-    tags:
-      [
-        "SUI Blockchain",
-        "NFT Marketplace",
-        "Decentralized",
-        "Bulk Minting",
-        "Fast Transactions",
-        "Low Fees",
-        "User-Friendly Interface",],
+      "Katana Marketplace is a decentralized NFT explorer built using ThirdWeb. It allows users to connect their wallets and browse all available NFTs in a sleek and modern Web3 interface. While trading features are under development, the platform already delivers a secure and seamless NFT viewing experience, laying the foundation for a scalable and user-friendly marketplace.",
+    image: "https://i.ibb.co/8gZmsJ7M/Capture.jpg",
+    tags: [
+      "ThirdWeb",
+      "NFT Marketplace",
+      "Wallet Integration",
+      "OpenSea NFTs",
+      "Etherscan NFTs",
+      "Trading",
+      "Scalability",
+      "User-Friendliness",
+    ],
     category: "client projects",
+    webapp:
+      "https://thirdweb.com/ethereum/0x31e189E2595007Fe911c64e5fa53be2ed9A21aCA",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -342,51 +429,25 @@ export const projects = [
     ],
   },
   {
-    id: 3,
-    title: "Mynty AI Tech Solutions",
-    description:
-      "Bridge Mining Machines reward of BTC, ETC, DOGECOIN, and XMR to USDT on Polygon Blockchain and then send reward to the investors of the mining machines.",
-    image:
-      "https://i.ibb.co/B2DH54gz/Bridge.png",
-    tags:
-      [
-        "Bridge",
-        "Mining Machines",
-        "ChangeNow Api Integration",
-        "Nextjs",
-        "Nestjs",
-        "PostgreSQL",
-        "Etherjs",],
-    category: "client projects",
-    member: [
-      {
-        name: "Muhammad Muntazir Mehdi",
-        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
-        github: "https://github.com/MehdiKhosa50",
-        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
-      },
-    ],
-  },
-  {
-    id: 4,
+    id: 7,
     title: "PeoplesDex: Internship Project",
     description:
       "Proudly presenting PeoplesDex - the culmination of my intensive internship experience! After weeks of dedicated development, I'm excited to share this project that represents my growth and expertise in blockchain technology.",
-    image:
-      "https://i.ibb.co/0jMkjkS/Capture21.png",
-    tags:
-      ["HTML",
-        "CSS",
-        "JavaScript",
-        "React",
-        "NextJS",
-        "Solidity",
-        "Remix IDE",
-        "Hardhat",
-        "Vanguard",
-        "Etherjs",
-        "ERC20",
-        "Axios"],
+    image: "https://i.ibb.co/0jMkjkS/Capture21.png",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "NextJS",
+      "Solidity",
+      "Remix IDE",
+      "Hardhat",
+      "Vanguard",
+      "Etherjs",
+      "ERC20",
+      "Axios",
+    ],
     category: "web app",
     github: "https://github.com/MehdiKhosa50",
     webapp: "https://peoplesdex.vercel.app/",
@@ -400,18 +461,12 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     title: "Personal Portfolio Website",
     description:
       "Designed and developed a professional portfolio website to showcase my skills, projects, and achievements. This site serves as a testament to my web development abilities and attention to design aesthetics.",
     image: "https://i.ibb.co/Cnvxm5k/portfolio.png",
-    tags: [
-      "Html",
-      "CSS",
-      "Material UI",
-      "Javascript",
-      "React",
-    ],
+    tags: ["Html", "CSS", "Material UI", "Javascript", "React"],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/Portfolio",
     webapp: "https://peoplesdex.vercel.app/",
@@ -425,7 +480,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 9,
     title: "Custom Blockchain with Proof-of-Work",
     description:
       "Implemented a custom blockchain for educational purposes, featuring a functional Proof-of-Work (PoW) consensus mechanism. This interactive project allows users to create multiple nodes on different ports, simulating a distributed network and enabling data transmission between nodes.",
@@ -438,10 +493,11 @@ export const projects = [
       "Express",
       "Postman",
       "API'S",
-      "Send data to Multiple nodes(ports)"
+      "Send data to Multiple nodes(ports)",
     ],
     category: "web app",
-    github: "https://github.com/MehdiKhosa50/Creating-a-Blockchain-from-Scratch-with-Javascript",
+    github:
+      "https://github.com/MehdiKhosa50/Creating-a-Blockchain-from-Scratch-with-Javascript",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -452,19 +508,12 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 10,
     title: "StakingDapp",
     description:
       "A Solidity-based staking system that allows users to stake ERC20 tokens and earn rewards over time. Built with Hardhat, this project implements secure staking, withdrawal, and reward claiming functionalities, complete with comprehensive testing.",
-    image:
-      "https://i.ibb.co/SQ7RLpx/Staking-Dapp.png",
-    tags: [
-      "Solidity",
-      "JavaScript",
-      "Remix IDE",
-      "Smart Contracts",
-      "Hardhat"
-    ],
+    image: "https://i.ibb.co/SQ7RLpx/Staking-Dapp.png",
+    tags: ["Solidity", "JavaScript", "Remix IDE", "Smart Contracts", "Hardhat"],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/PeoplesStakingDapp",
     member: [
@@ -477,19 +526,18 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 11,
     title: "FlashLoans",
     description:
       "I created flash loans by forking the Binance Smart Chain Mainnet Network and integrating the Uniswap protocol. This implementation allows seamless borrowing and arbitrage opportunities using Uniswap's infrastructure.",
-    image:
-      "https://i.ibb.co/vdQvb8N/Flash-Loans.png",
+    image: "https://i.ibb.co/vdQvb8N/Flash-Loans.png",
     tags: [
       "Solidity",
       "JavaScript",
       "Uniswap Protocol",
       "PancakeSwap",
       "Forked BSCMainnet",
-      "Hardhat"
+      "Hardhat",
     ],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/Flash-Loans",
@@ -503,17 +551,12 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 12,
     title: "Decentralized FundRaising Application",
     description:
       "Engineered a fully decentralized application (DApp) designed to facilitate startup fundraising. This project demonstrates my proficiency in blockchain technology and my ability to create solutions that address real-world financial challenges.",
-    image:
-      "https://i.ibb.co/7JrVks9/Trust-Fund-DAO.png",
-    tags: [
-      "Solidity",
-      "Remix IDE",
-      "Smart Contracts"
-    ],
+    image: "https://i.ibb.co/7JrVks9/Trust-Fund-DAO.png",
+    tags: ["Solidity", "Remix IDE", "Smart Contracts"],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/TrustFundDAO",
     member: [
@@ -526,12 +569,11 @@ export const projects = [
     ],
   },
   {
-    id: 10,
+    id: 13,
     title: "Static Shopping Website (2021)",
     description:
       "Developed a static e-commerce website during my early learning phase with ASP.NET. This project showcased my ability to create functional web applications and laid the foundation for my web development skills.",
-    image:
-      "https://i.ibb.co/5Bypm9B/shopping.png",
+    image: "https://i.ibb.co/5Bypm9B/shopping.png",
     tags: ["HTML", "CSS", "Bootstrap", "javascript", "JQuery"],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/ShoppingWebsite",
