@@ -456,6 +456,33 @@ export const projects = [
     ],
   },
   {
+    id: 17,
+    title: "Arbitrage Bot",
+    description:
+      "Developed an OpenSea bidding service that programmatically places bids on NFTs when arbitrage opportunities are detected between OpenSea and Blur marketplaces.",
+    image: "https://i.ibb.co/gZPTkMM6/OpenSea.jpg",
+    tags: [
+      "Ethereum Blockchain",
+      "NFT Collection",
+      "OpenSea NFTs",
+      "Blur NFTs",
+      "Arbitrage Bot",
+      "Bidding",
+      "OpenSea API",
+      "Blur API",
+    ],
+    category: "client projects",
+    webapp: "https://testnets.opensea.io/collection/mytoken-11309",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
     id: 5,
     title: "Katana Marketplace on Sequence",
     description:
