@@ -284,6 +284,7 @@ export const projects = [
       "Etherjs",
     ],
     category: "client projects",
+    webapp: "https://polygonscan.com/address/0xde283d30ee617b900697b45f816cb8f9e22a5167#code",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -337,7 +338,7 @@ export const projects = [
       "Nats",
     ],
     category: "client projects",
-    webapp: "",
+    webapp: "https://katanainu-minting-katanainu-com.vercel.app/pages/affiliate",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -469,7 +470,7 @@ export const projects = [
     tags: ["Html", "CSS", "Material UI", "Javascript", "React"],
     category: "web app",
     github: "https://github.com/MehdiKhosa50/Portfolio",
-    webapp: "https://peoplesdex.vercel.app/",
+    webapp: "https://www.mehdikhosa.xyz/",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
