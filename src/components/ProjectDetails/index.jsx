@@ -197,21 +197,34 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+
+                    {project?.video ? (
+                        <video
+                            src={project.video}
+                            controls
+                            autoPlay
+                            poster={project.thumbnail}
+                            style={{ width: "100%", borderRadius: "10px" }}
+                        />
+                    ) : (
+                        <Image src={project?.image} />
+                    )}
+
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
                         {project?.tags.map((tag) => (
-                            <Tag>{tag}</Tag>
+                            <Tag key={tag}>{tag}</Tag>
                         ))}
                     </Tags>
                     <Desc>{project?.description}</Desc>
+
                     {project.member && (
                         <>
                             <Label>Members</Label>
                             <Members>
                                 {project?.member.map((member) => (
-                                    <Member>
+                                    <Member key={member.name}>
                                         <MemberImage src={member.img} />
                                         <MemberName>{member.name}</MemberName>
                                         <a href={member.github} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -225,15 +238,15 @@ const index = ({ openModal, setOpenModal }) => {
                             </Members>
                         </>
                     )}
+
                     <ButtonGroup>
                         <Button dull href={project?.github} target='new'>View Code</Button>
                         <Button href={project?.webapp} target='new'>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
-
         </Modal>
-    )
-}
+    );
+};
 
 export default index

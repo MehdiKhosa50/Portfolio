@@ -340,7 +340,7 @@ export const projects = [
     ],
     category: "client projects",
     webapp:
-      "https://katanainu-minting-katanainu-com.vercel.app/pages/affiliate",
+      "https://katanainu-reward-system.vercel.app/",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -365,7 +365,7 @@ export const projects = [
       "Low Fees",
       "User-Friendly Interface",
     ],
-    category: "client projects",
+    category: ["sui", "client projects"],
     webapp:
       "https://suiscan.xyz/testnet/object/0x508725e3b66a818544d166e09b7cdf3289e16e7d25931ec54cbd01fe30c682b1/tx-blocks",
     member: [
@@ -378,7 +378,7 @@ export const projects = [
     ],
   },
   {
-    id: 14,
+    id: 5,
     title: "Telegram HamsterKombat Bot",
     description:
       "Integrated TON wallet connection into the web app and created a Telegram bot to streamline user interactions and onboarding.",
@@ -392,7 +392,7 @@ export const projects = [
       "FatherBot",
       "React",
     ],
-    category: "client projects",
+    category: "ton",
     webapp: "https://t.me/hamsterkomat_bot",
     member: [
       {
@@ -404,7 +404,7 @@ export const projects = [
     ],
   },
   {
-    id: 15,
+    id: 6,
     title: "Mint Jetton Tokens on TON Blockchain",
     description:
       "Minted a Jetton token on the TON blockchain using CLI, with AI-assisted smart contract deployment and end-to-end command-line integration.",
@@ -417,7 +417,7 @@ export const projects = [
       "Ton/wallets",
       "Smart Contract Deployment",
     ],
-    category: "client projects",
+    category: "ton",
     webapp:
       "https://testnet.tonscan.org/jetton/kQAWLhT6AdrxQWPguv0759aleoPm70y2Cg7XGoOUKafp2QKn#transactions",
     member: [
@@ -430,7 +430,7 @@ export const projects = [
     ],
   },
   {
-    id: 16,
+    id: 7,
     title: "Mint NFT on TON Blockchain",
     description:
       "Deployed an NFT collection on the TON blockchain and minted NFTs using CLI, with AI-assisted contract setup and full command-line deployment flow.",
@@ -443,7 +443,7 @@ export const projects = [
       "Ton/wallets",
       "Smart Contract Deployment",
     ],
-    category: "client projects",
+    category: "ton",
     webapp:
       "https://testnet.tonscan.org/address/0QCCOmbN2JjxQAvyXqYB6NLMcVUOikf_YVgHJFoAiESLkbnp#nfts",
     member: [
@@ -456,7 +456,7 @@ export const projects = [
     ],
   },
   {
-    id: 17,
+    id: 8,
     title: "Arbitrage Bot",
     description:
       "Developed an OpenSea bidding service that programmatically places bids on NFTs when arbitrage opportunities are detected between OpenSea and Blur marketplaces.",
@@ -483,7 +483,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 9,
     title: "Katana Marketplace on Sequence",
     description:
       "Katana Marketplace is a decentralized NFT marketplace built using Sequence. It enables seamless wallet integration, gasless transactions, and smooth NFT minting and trading. Designed for scalability and user-friendliness, Katana delivers a secure and modern Web3 experience.",
@@ -511,7 +511,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 10,
     title: "Katana Marketplace on ThirdWeb",
     description:
       "Katana Marketplace is a decentralized NFT explorer built using ThirdWeb. It allows users to connect their wallets and browse all available NFTs in a sleek and modern Web3 interface. While trading features are under development, the platform already delivers a secure and seamless NFT viewing experience, laying the foundation for a scalable and user-friendly marketplace.",
@@ -539,7 +539,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 11,
     title: "PeoplesDex: Internship Project",
     description:
       "Proudly presenting PeoplesDex - the culmination of my intensive internship experience! After weeks of dedicated development, I'm excited to share this project that represents my growth and expertise in blockchain technology.",
@@ -558,7 +558,7 @@ export const projects = [
       "ERC20",
       "Axios",
     ],
-    category: "web app",
+    category: "evm dApp",
     github: "https://github.com/MehdiKhosa50",
     webapp: "https://peoplesdex.vercel.app/",
     member: [
@@ -571,13 +571,73 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 12,
+    title: "Solana Token Minter",
+    description:
+      "A production-ready token minting platform on Solana with instant ARGON token creation, real-time balance tracking, and multi-wallet support. Built with Next.js, TypeScript, Tailwind CSS, Solana, Anchor, and Rust, it features PDA management, cross-program invocation with the SPL Token program, automatic account creation, and optimized transactions. Offers a sleek glassmorphism UI, responsive design, and sub-second transaction confirmations at minimal cost.",
+    thumbnail: "https://i.ibb.co/SDJfTL42/SPL-Token-Thumb.jpg",
+    video:
+      "https://res.cloudinary.com/dyrprazzo/video/upload/v1754912071/Soalan_Token_Minter_jnbrx7.mp4",
+    tags: [
+      "Solana",
+      "Anchor",
+      "Rust",
+      "Solana PlayGround",
+      "SPL Token",
+      "Solana Wallets",
+      "Next.js",
+      "TypeScript",
+    ],
+    category: "solana",
+    github: "",
+    webapp: "https://solana-token-minter-njbp.vercel.app/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 13,
+    title: "Solana Todo DApp",
+    description:
+      "A decentralized todo manager where all tasks are stored, updated, and deleted directly on the Solana blockchain. Features on-chain completion tracking, SOL refunds on account closure, and full wallet-based ownership. Built with Anchor, Rust, Next.js, and Solana/Web3.js, it uses PDAs for account management, supports real-time updates, and requires no backend servers.",
+    thumbnail: "https://i.ibb.co/B2MBLFY6/Todo-Thumb.jpg",
+    video:
+      "https://res.cloudinary.com/dyrprazzo/video/upload/v1754912678/todo_dapp_yqiora.mp4",
+    tags: [
+      "Solana",
+      "Anchor",
+      "Rust",
+      "Solana PlayGround",
+      "Todo DApp",
+      "Solana Wallets",
+      "Next.js",
+      "TypeScript",
+    ],
+    category: "solana",
+    github: "",
+    webapp: "https://solana-todoapp.vercel.app/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 14,
     title: "Personal Portfolio Website",
     description:
       "Designed and developed a professional portfolio website to showcase my skills, projects, and achievements. This site serves as a testament to my web development abilities and attention to design aesthetics.",
     image: "https://i.ibb.co/Cnvxm5k/portfolio.png",
     tags: ["Html", "CSS", "Material UI", "Javascript", "React"],
-    category: "web app",
+    category: "evm dApp",
     github: "https://github.com/MehdiKhosa50/Portfolio",
     webapp: "https://www.mehdikhosa.xyz/",
     member: [
@@ -590,7 +650,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 15,
     title: "Custom Blockchain with Proof-of-Work",
     description:
       "Implemented a custom blockchain for educational purposes, featuring a functional Proof-of-Work (PoW) consensus mechanism. This interactive project allows users to create multiple nodes on different ports, simulating a distributed network and enabling data transmission between nodes.",
@@ -605,7 +665,7 @@ export const projects = [
       "API'S",
       "Send data to Multiple nodes(ports)",
     ],
-    category: "web app",
+    category: "evm dApp",
     github:
       "https://github.com/MehdiKhosa50/Creating-a-Blockchain-from-Scratch-with-Javascript",
     member: [
@@ -618,13 +678,13 @@ export const projects = [
     ],
   },
   {
-    id: 10,
+    id: 16,
     title: "StakingDapp",
     description:
       "A Solidity-based staking system that allows users to stake ERC20 tokens and earn rewards over time. Built with Hardhat, this project implements secure staking, withdrawal, and reward claiming functionalities, complete with comprehensive testing.",
     image: "https://i.ibb.co/SQ7RLpx/Staking-Dapp.png",
     tags: ["Solidity", "JavaScript", "Remix IDE", "Smart Contracts", "Hardhat"],
-    category: "web app",
+    category: "evm dApp",
     github: "https://github.com/MehdiKhosa50/PeoplesStakingDapp",
     member: [
       {
@@ -636,7 +696,7 @@ export const projects = [
     ],
   },
   {
-    id: 11,
+    id: 17,
     title: "FlashLoans",
     description:
       "I created flash loans by forking the Binance Smart Chain Mainnet Network and integrating the Uniswap protocol. This implementation allows seamless borrowing and arbitrage opportunities using Uniswap's infrastructure.",
@@ -649,7 +709,7 @@ export const projects = [
       "Forked BSCMainnet",
       "Hardhat",
     ],
-    category: "web app",
+    category: "evm dApp",
     github: "https://github.com/MehdiKhosa50/Flash-Loans",
     member: [
       {
@@ -661,13 +721,13 @@ export const projects = [
     ],
   },
   {
-    id: 12,
+    id: 18,
     title: "Decentralized FundRaising Application",
     description:
       "Engineered a fully decentralized application (DApp) designed to facilitate startup fundraising. This project demonstrates my proficiency in blockchain technology and my ability to create solutions that address real-world financial challenges.",
     image: "https://i.ibb.co/7JrVks9/Trust-Fund-DAO.png",
     tags: ["Solidity", "Remix IDE", "Smart Contracts"],
-    category: "web app",
+    category: "evm dApp",
     github: "https://github.com/MehdiKhosa50/TrustFundDAO",
     member: [
       {
@@ -679,13 +739,13 @@ export const projects = [
     ],
   },
   {
-    id: 13,
+    id: 19,
     title: "Static Shopping Website (2021)",
     description:
       "Developed a static e-commerce website during my early learning phase with ASP.NET. This project showcased my ability to create functional web applications and laid the foundation for my web development skills.",
     image: "https://i.ibb.co/5Bypm9B/shopping.png",
     tags: ["HTML", "CSS", "Bootstrap", "javascript", "JQuery"],
-    category: "web app",
+    category: "evm dApp",
     github: "https://github.com/MehdiKhosa50/ShoppingWebsite",
     member: [
       {
