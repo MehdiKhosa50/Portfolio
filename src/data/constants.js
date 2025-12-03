@@ -12,7 +12,7 @@ export const Bio = {
     "I am a disciplined and versatile individual, always eager to take on new challenges. With a passion for learning, I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/MehdiKhosa50",
   resume:
-    "https://drive.google.com/file/d/1WK_IXmY5-m4EvEvhLWFpzdgDPJN4mE4p/view?usp=sharing",
+    "https://drive.google.com/file/d/197ndEyS_FwM8Iv2lrfTFebcRMfRGvkRL/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mehdikhosa/",
   twitter: "https://x.com/MehdiKhosa50",
 };
@@ -187,25 +187,16 @@ export const experiences = [
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
     role: "Blockchain Engineer",
     company: "ArgonTeq Inc",
-    date: "January 2025 - Present",
+    date: "Oct 8, 2024 - Oct 31, 2025",
     desc: "As an Blockchain Engineer at ArgonTeq, My responsibilities will include writing smart contracts for EVM-based blockchains, maintaining their security, and performing audits. Additionally, I will be developing the backend using Node.js and integrating it with the frontend.",
     skills: ["Solidity", "Hardhat", "Mongodb Express React Node"],
-  },
-  {
-    id: 1,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
-    role: "Blockchain Intern",
-    company: "ArgonTeq Inc",
-    date: "October 2024 - December 204",
-    desc: "As an intern at ArgonTeq, I am excited to gain hands-on experience in auditing smart contracts and ensuring their security and efficiency. I will collaborate with a talented team to write robust smart contracts while also developing full-stack applications that leverage blockchain technology. This opportunity allows me to deepen my understanding of decentralized systems and contribute to innovative solutions. I am eager to enhance my skills in smart contract development, blockchain security, and full-stack application design, all while working in a dynamic and challenging environment.",
-    skills: ["Solidity", "Javascript", "Nextjs", "Etherjs", "Hardhat"],
   },
   {
     id: 0,
     img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
     role: "Blockchain Developer",
     company: "Vanar Blockchain",
-    date: "June 2024 - August 2024",
+    date: "June 15, 2024 - August 21, 2024",
     desc: "During my internship at Vanar, I immersed myself in a diverse range of blockchain tools and technologies. The pinnacle of my internship was the development of PeoplesDex, a decentralized exchange (DEX) built using Next.js and Solidity. This project exemplifies my ability to integrate front-end frameworks with smart contract development.",
     skills: [
       "Vanguard",
@@ -339,8 +330,7 @@ export const projects = [
       "Nats",
     ],
     category: "client projects",
-    webapp:
-      "https://katanainu-reward-system.vercel.app/",
+    webapp: "https://katanainu-reward-system.vercel.app/",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
