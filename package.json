@@ -2,6 +2,7 @@
   "name": "mehdiportfolio",
   "version": "0.1.0",
   "homepage": "https://www.mehdikhosa.xyz/",
+  "packageManager": "pnpm@10",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -35,7 +36,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "pnpm build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
@@ -55,5 +56,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "pnpm@10.21.0+sha512.da3337267e400fdd3d479a6c68079ac6db01d8ca4f67572083e722775a796788a7a9956613749e000fac20d424b594f7a791a5f4e2e13581c5ef947f26968a40"
 }
