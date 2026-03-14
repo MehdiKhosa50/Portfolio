@@ -1,22 +1,18 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
-import { Close, CloseRounded } from '@mui/icons-material';
-import { useTheme } from 'styled-components';
 import { FaHome } from "react-icons/fa";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { IoPeople } from "react-icons/io5";
 import { PiGraduationCapBold } from "react-icons/pi";
 import { HiLightBulb } from "react-icons/hi";
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [isTransitioning, setIsTransitioning] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('about');
-  const theme = useTheme();
 
   // Fast page flip transition
   const navigateToSection = (sectionId) => {
@@ -74,26 +70,13 @@ const Navbar = () => {
     }, 800);
   };
 
-  // Create quick particle burst
-  const createParticleBurst = () => {
-    const burst = document.createElement('div');
-    burst.className = 'particle-burst';
-    document.body.appendChild(burst);
-    
-    setTimeout(() => {
-      if (burst.parentNode) {
-        burst.parentNode.removeChild(burst);
-      }
-    }, 600);
-  };
-
   return (
     <Nav>
       <NavbarContainer> 
         <NavLogo to='/' onClick={() => window.scrollTo(0, 0)}>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
+          <div style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px', cursor: 'pointer' }}>
             <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+          </div>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {

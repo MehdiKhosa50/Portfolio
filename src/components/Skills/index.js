@@ -130,11 +130,6 @@ const Skill = styled.div`
   }
 `;
 
-// Usage example with a theme
-const theme = {
-  card: '#FFF' // Example theme color for card background
-};
-
 const SkillTitle = styled.h2`
   font-size: 28px;
   font-weight: 600;

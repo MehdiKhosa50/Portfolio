@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import HeroBgAnimation from "../HeroBgAnimation";
 import {
   HeroContainer,
@@ -11,8 +11,6 @@ import {
   Title,
   Span,
   SubTitle,
-  SocialMediaIcons,
-  SocialMediaIcon,
   ResumeButton,
 } from "./HeroStyle";
 import { IoMdDownload } from "react-icons/io";

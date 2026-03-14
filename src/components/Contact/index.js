@@ -154,7 +154,7 @@ const Contact = () => {
 
   const checkFormValidity = () => {
     const formData = new FormData(form.current);
-    for (let [_, value] of formData.entries()) {
+    for (let [, value] of formData.entries()) {
       if (!value.trim()) {
         setIsFormValid(false);
         return;

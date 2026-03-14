@@ -1,11 +1,10 @@
 // components/Loader/index.js
 import React from 'react';
 import './Loader.css';
-import styled from 'styled-components';
 import { FaTwitterSquare } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
-import { FaLinkedin, FaT } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 import HeroImg from '../../images/HeroImage.jpg'
 
 const Loader = () => {

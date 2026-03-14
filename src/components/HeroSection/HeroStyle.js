@@ -1,4 +1,3 @@
-import _default from "../../themes/default";
 import styled, { keyframes } from 'styled-components';
 
 export const HeroContainer = styled.div`
