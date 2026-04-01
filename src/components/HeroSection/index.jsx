@@ -14,7 +14,7 @@ import {
   ResumeButton,
 } from "./HeroStyle";
 import { IoMdDownload } from "react-icons/io";
-import HeroImg from "../../images/heroimage.jpeg";
+import HeroImg from "../../images/HeroImage.jpeg";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
 
