@@ -184,6 +184,22 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://media.licdn.com/dms/image/v2/D4D0BAQHoC8t6Bo5Hgw/company-logo_200_200/company-logo_200_200/0/1736160194887?e=2147483647&v=beta&t=zuEU0qK1x_TpKIb4lbP3glfO8VpAfO62iSWm4-aX7qg",
+    role: "Full Stack Engineer",
+    company: "XNerds Solutions",
+    date: "Dec 8, 2025 - Present",
+    desc: "As an Full Stack Engineer at XNerds Solutions, My responsibilities will include developing trading platforms and maintaining web applications, collaborating with cross-functional teams to design and implement new features, and ensuring the performance and scalability of the applications. Additionally, I will be involved in code reviews, debugging, and optimizing the applications for maximum speed and scalability.",
+    skills: [
+      "Blockchain",
+      "Web Development",
+      "AI",
+      "Trading Bots",
+      "Telegram Bots",
+      "Trading Platforms",
+    ],
+  },
+  {
+    id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFCi9KBgJMHdbMXSd17SrQaZCJWuCntPktYw&s",
     role: "Blockchain Engineer",
     company: "ArgonTeq Inc",
@@ -192,7 +208,7 @@ export const experiences = [
     skills: ["Solidity", "Hardhat", "Mongodb Express React Node"],
   },
   {
-    id: 0,
+    id: 2,
     img: "https://i.ytimg.com/vi/dEB6y8hx9jE/maxresdefault.jpg",
     role: "Blockchain Developer",
     company: "Vanar Blockchain",
@@ -243,13 +259,21 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "BCoinBets",
+    title: "Crypto Signals",
     description:
-      "Bet on Bitcoin.Win with Friends.Make predictions on Bitcoin's price movements and compete with your friends in a secure, transparent environment.",
-    image: "https://i.ibb.co/rf0DMwxZ/BCoin-Bets.png",
-    tags: ["MERN Stack", "Solidity", "Hardhat", "Polygon Mainnet", "Etherjs"],
+      "Crypto Signals is a Web Application and Telegram bot that provides real-time cryptocurrency trading signals to the live platform and telegram channel. It utilizes advanced algorithms and market analysis to generate accurate trading signals, helping users make informed decisions in the volatile cryptocurrency market.",
+    image: "https://i.ibb.co/qLSkSBQp/image.png",
+    tags: [
+      "Next.js",
+      "Nodejs",
+      "PostgreSQL",
+      "Telegram Bot",
+      "Crypto Trading",
+      "Real-time BTC Signals",
+      "Market Analysis",
+    ],
     category: "client projects",
-    webapp: "https://bcoinbets.com/",
+    webapp: "https://budsignal.io/",
     member: [
       {
         name: "Muhammad Muntazir Mehdi",
@@ -261,6 +285,42 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Trading Alerts",
+    description:
+      "Get real-time trading alerts and notifications for your favorite cryptocurrencies based on defined indicators rules.",
+    image: "https://i.ibb.co/vxvv9QYj/image.png",
+    tags: ["Next.js", "Nodejs", "PostgreSQL", "Chatbot", "Crypto Trading Alerts", "Real-time Notifications", "Customizable Trading View Indicators"],
+    category: "client projects",
+    webapp: "https://trading-alerts-frontend-orpin.vercel.app/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "BCoinBets",
+    description:
+      "Bet on Bitcoin.Win with Friends.Make predictions on Bitcoin's price movements and compete with your friends in a secure, transparent environment.",
+    image: "https://i.ibb.co/rf0DMwxZ/BCoin-Bets.png",
+    tags: ["MERN Stack", "Solidity", "Hardhat", "Polygon Mainnet", "Etherjs"],
+    category: "client projects",
+    webapp: "https://bcoin-bets.vercel.app/",
+    member: [
+      {
+        name: "Muhammad Muntazir Mehdi",
+        img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
+        github: "https://github.com/MehdiKhosa50",
+        linkedin: "https://www.linkedin.com/in/mehdikhosa/",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Mynty AI Tech Solutions",
     description:
       "Bridge Mining Machines reward of BTC, ETC, DOGECOIN, and XMR to USDT on Polygon Blockchain and then send reward to the investors of the mining machines.",
@@ -287,7 +347,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "24K GOLD",
     description:
       "24K GOLD is a tokenized gold-based investment platform where users earn profits proportionally to their token holdings backed by real paxg gold assets.",
@@ -313,7 +373,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 5,
     title: "KatanaInu Play to Earn",
     description:
       "KatanaInu Play-to-Earn Reward System is an on-chain reward distribution engine built for a blockchain-integrated game. The system fetches match results from the KatanaInu game backend, processes player eligibility, and distributes KATA tokens to qualified players through smart contracts. It supports automated reward calculations, secure off-chain to on-chain data syncing (via NATS and Node.js), and ensures fair, gas-efficient token distribution to incentivize gameplay.",
@@ -341,7 +401,7 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "NFT Marketplace on SUI Blockchain",
     description:
       "NFT Marketplace on SUI Blockchain is a decentralized platform that allows users to create, buy, and sell NFTs. Built using the SUI blockchain, it offers fast transactions, low fees, and a user-friendly interface.",
@@ -368,7 +428,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: "Telegram HamsterKombat Bot",
     description:
       "Integrated TON wallet connection into the web app and created a Telegram bot to streamline user interactions and onboarding.",
@@ -394,7 +454,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 8,
     title: "Mint Jetton Tokens on TON Blockchain",
     description:
       "Minted a Jetton token on the TON blockchain using CLI, with AI-assisted smart contract deployment and end-to-end command-line integration.",
@@ -420,7 +480,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "Mint NFT on TON Blockchain",
     description:
       "Deployed an NFT collection on the TON blockchain and minted NFTs using CLI, with AI-assisted contract setup and full command-line deployment flow.",
@@ -446,7 +506,7 @@ export const projects = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     title: "Arbitrage Bot",
     description:
       "Developed an OpenSea bidding service that programmatically places bids on NFTs when arbitrage opportunities are detected between OpenSea and Blur marketplaces.",
@@ -473,7 +533,7 @@ export const projects = [
     ],
   },
   {
-    id: 9,
+    id: 11,
     title: "Katana Marketplace on Sequence",
     description:
       "Katana Marketplace is a decentralized NFT marketplace built using Sequence. It enables seamless wallet integration, gasless transactions, and smooth NFT minting and trading. Designed for scalability and user-friendliness, Katana delivers a secure and modern Web3 experience.",
@@ -501,7 +561,7 @@ export const projects = [
     ],
   },
   {
-    id: 10,
+    id: 12,
     title: "Katana Marketplace on ThirdWeb",
     description:
       "Katana Marketplace is a decentralized NFT explorer built using ThirdWeb. It allows users to connect their wallets and browse all available NFTs in a sleek and modern Web3 interface. While trading features are under development, the platform already delivers a secure and seamless NFT viewing experience, laying the foundation for a scalable and user-friendly marketplace.",
@@ -529,7 +589,7 @@ export const projects = [
     ],
   },
   {
-    id: 11,
+    id: 13,
     title: "PeoplesDex: Internship Project",
     description:
       "Proudly presenting PeoplesDex - the culmination of my intensive internship experience! After weeks of dedicated development, I'm excited to share this project that represents my growth and expertise in blockchain technology.",
@@ -561,7 +621,7 @@ export const projects = [
     ],
   },
   {
-    id: 12,
+    id: 14,
     title: "Solana Token Minter",
     description:
       "A production-ready token minting platform on Solana with instant ARGON token creation, real-time balance tracking, and multi-wallet support. Built with Next.js, TypeScript, Tailwind CSS, Solana, Anchor, and Rust, it features PDA management, cross-program invocation with the SPL Token program, automatic account creation, and optimized transactions. Offers a sleek glassmorphism UI, responsive design, and sub-second transaction confirmations at minimal cost.",
@@ -591,7 +651,7 @@ export const projects = [
     ],
   },
   {
-    id: 13,
+    id: 15,
     title: "Solana Todo DApp",
     description:
       "A decentralized todo manager where all tasks are stored, updated, and deleted directly on the Solana blockchain. Features on-chain completion tracking, SOL refunds on account closure, and full wallet-based ownership. Built with Anchor, Rust, Next.js, and Solana/Web3.js, it uses PDAs for account management, supports real-time updates, and requires no backend servers.",
@@ -621,7 +681,7 @@ export const projects = [
     ],
   },
   {
-    id: 14,
+    id: 16,
     title: "Personal Portfolio Website",
     description:
       "Designed and developed a professional portfolio website to showcase my skills, projects, and achievements. This site serves as a testament to my web development abilities and attention to design aesthetics.",
@@ -640,7 +700,7 @@ export const projects = [
     ],
   },
   {
-    id: 15,
+    id: 17,
     title: "Custom Blockchain with Proof-of-Work",
     description:
       "Implemented a custom blockchain for educational purposes, featuring a functional Proof-of-Work (PoW) consensus mechanism. This interactive project allows users to create multiple nodes on different ports, simulating a distributed network and enabling data transmission between nodes.",
@@ -668,7 +728,7 @@ export const projects = [
     ],
   },
   {
-    id: 16,
+    id: 18,
     title: "StakingDapp",
     description:
       "A Solidity-based staking system that allows users to stake ERC20 tokens and earn rewards over time. Built with Hardhat, this project implements secure staking, withdrawal, and reward claiming functionalities, complete with comprehensive testing.",
@@ -686,7 +746,7 @@ export const projects = [
     ],
   },
   {
-    id: 17,
+    id: 19,
     title: "FlashLoans",
     description:
       "I created flash loans by forking the Binance Smart Chain Mainnet Network and integrating the Uniswap protocol. This implementation allows seamless borrowing and arbitrage opportunities using Uniswap's infrastructure.",
@@ -711,7 +771,7 @@ export const projects = [
     ],
   },
   {
-    id: 18,
+    id: 20,
     title: "Decentralized FundRaising Application",
     description:
       "Engineered a fully decentralized application (DApp) designed to facilitate startup fundraising. This project demonstrates my proficiency in blockchain technology and my ability to create solutions that address real-world financial challenges.",
@@ -729,7 +789,7 @@ export const projects = [
     ],
   },
   {
-    id: 19,
+    id: 21,
     title: "Static Shopping Website (2021)",
     description:
       "Developed a static e-commerce website during my early learning phase with ASP.NET. This project showcased my ability to create functional web applications and laid the foundation for my web development skills.",
