@@ -15,167 +15,154 @@ export const Bio = {
     "https://drive.google.com/file/d/197ndEyS_FwM8Iv2lrfTFebcRMfRGvkRL/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/mehdikhosa/",
   twitter: "https://x.com/MehdiKhosa50",
+  email: "mehdikhosa50@gmail.com",
+  whatsapp: "https://wa.me/923176202271",
+  telegram: "https://t.me/dappengineer50",
 };
 
 export const skills = [
   {
-    title: "Frontend",
+    title: "Frontend Engineering",
     skills: [
       {
-        name: "HTML",
-        image: "https://www.w3.org/html/logo/badge/html5-badge-h-solo.png",
+        name: "Next.js",
+        image: "https://skillicons.dev/icons?i=nextjs",
       },
       {
-        name: "CSS",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
-      },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
+        name: "React.js",
+        image: "https://skillicons.dev/icons?i=react",
       },
       {
         name: "JavaScript",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        image: "https://skillicons.dev/icons?i=js",
       },
       {
-        name: "React Js",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        name: "HTML5",
+        image: "https://skillicons.dev/icons?i=html",
       },
       {
-        name: "Next Js",
-        image:
-          "https://marcbruederlin.gallerycdn.vsassets.io/extensions/marcbruederlin/next-icons/0.0.4/1710496760165/Microsoft.VisualStudio.Services.Icons.Default",
+        name: "CSS3",
+        image: "https://skillicons.dev/icons?i=css",
       },
       {
         name: "Material UI",
+        image: "https://skillicons.dev/icons?i=materialui",
+      },
+      {
+        name: "Wallet UX Integration",
         image:
-          "https://static-00.iconduck.com/assets.00/material-ui-icon-2048x1626-on580ia9.png",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23101826'/%3E%3Cpath d='M48 18l-13 9 2-5-5-4h16z' fill='%23e17726'/%3E%3Cpath d='M16 18l13 9-2-5 5-4H16z' fill='%23e27625'/%3E%3Cpath d='M42 39l-8 6 7 6 5-11-4-1z' fill='%23e27625'/%3E%3Cpath d='M22 39l8 6-7 6-5-11 4-1z' fill='%23e27625'/%3E%3Cpath d='M30 31l-9-3 6 11 3-8zm4 0l9-3-6 11-3-8z' fill='%23f6851b'/%3E%3Cpath d='M23 28l7 3-1-9-6 6zm18 0l-7 3 1-9 6 6z' fill='%23e27625'/%3E%3Cpath d='M30 45l-1 6 3 2 3-2-1-6h-4z' fill='%23c0ad9e'/%3E%3Cpath d='M30 41l-8-2 6 5 2-3zm4 0l8-2-6 5-2-3z' fill='%2316181b'/%3E%3C/svg%3E",
       },
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & Automation",
     skills: [
       {
         name: "Node.js",
-        image: "https://nodejs.org/static/images/logo.svg",
+        image: "https://skillicons.dev/icons?i=nodejs",
+      },
+      {
+        name: "NestJS",
+        image: "https://skillicons.dev/icons?i=nestjs",
       },
       {
         name: "Express.js",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+          "https://skillicons.dev/icons?i=express",
+      },
+      {
+        name: "PostgreSQL",
+        image: "https://skillicons.dev/icons?i=postgres",
       },
       {
         name: "MongoDB",
+        image: "https://skillicons.dev/icons?i=mongodb",
+      },
+      {
+        name: "NATS Messaging",
         image:
-          "https://webimages.mongodb.com/_com_assets/cms/mongodb_logo1-76twgcu2dm.png",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230f172a'/%3E%3Crect x='13' y='16' width='38' height='32' rx='8' fill='%2327aa52'/%3E%3Cpath d='M22 42V22l20 20V22' fill='none' stroke='%23fff' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E",
       },
       {
-        name: "Mongoose",
-        image: "https://avatars.githubusercontent.com/u/7552965?s=280&v=4",
-      },
-      {
-        name: "Socket.IO",
-        image: "https://cdn.worldvectorlogo.com/logos/socket-io.svg",
-      },
-      {
-        name: "Redis",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/6/64/Redis_Logo.svg",
-      },
-      {
-        name: "NATS",
-        image: "https://nats.io/img/nats-icon-color.png",
+        name: "Telegram Bots",
+        image: "https://skillicons.dev/icons?i=telegram",
       },
     ],
   },
   {
-    title: "Blockchain",
+    title: "Blockchain Engineering",
     skills: [
       {
         name: "Solidity",
-        image: "https://www.logo.wine/a/logo/Solidity/Solidity-Logo.wine.svg",
+        image:
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111827'/%3E%3Cpath d='M20 18h18l6 10H26z' fill='%23d9d9d9'/%3E%3Cpath d='M38 46H20l6-10h18z' fill='%23909090'/%3E%3Cpath d='M26 28h18l-6 10H20z' fill='%23b3b3b3'/%3E%3C/svg%3E",
       },
       {
-        name: "Javascript",
+        name: "Ethers.js",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSod7CJvOSEFdtFtmH1pbaPYSW8M4gXMwsmWA&s",
-      },
-      {
-        name: "Defi",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIkTwe76UmXLwxrbYfu5fHfQCQNE0dnsFOA&s",
-      },
-      {
-        name: "Etherjs",
-        image:
-          "https://image.shutterstock.com/image-photo/image-260nw-683064262.jpg",
-      },
-      {
-        name: "ERC20,ERC721,ERC1155",
-        image:
-          "https://image.shutterstock.com/image-photo/image-260nw-683064262.jpg",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236277f3'/%3E%3Cstop offset='100%25' stop-color='%23343ea8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230f172a'/%3E%3Cpath d='M32 8l16 24-16 9-16-9 16-24z' fill='url(%23g)'/%3E%3Cpath d='M32 56L16 35l16 9 16-9-16 21z' fill='%2398a8ff'/%3E%3C/svg%3E",
       },
       {
         name: "Hardhat",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTse959pVUUK-P0fo7RMGOOULTikIxe_wp1pA&s",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23111827'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%23facc15'/%3E%3Cpath d='M20 34c2-9 8-15 18-15 7 0 13 3 17 10-6-2-12-3-18-3-6 0-11 2-17 8z' fill='%23111827'/%3E%3Crect x='18' y='34' width='28' height='7' rx='3.5' fill='%23111827'/%3E%3Ccircle cx='47' cy='38' r='4' fill='%23111827'/%3E%3C/svg%3E",
       },
       {
-        name: "DEX",
+        name: "ERC-20 / ERC-721 / ERC-1155",
         image:
-          "https://images.seeklogo.com/logo-png/52/1/dex-screener-logo-png_seeklogo-527276.png",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M32 10l14 23-14 8-14-8 14-23z' fill='%238a92b2'/%3E%3Cpath d='M32 54L18 35l14 8 14-8-14 19z' fill='%23626d94'/%3E%3C/svg%3E",
+      },
+      {
+        name: "DeFi & Trading dApps",
+        image:
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%2306b6d4'/%3E%3Cstop offset='100%25' stop-color='%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230b1220'/%3E%3Cpath d='M14 44l12-12 8 8 16-18' fill='none' stroke='url(%23g)' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M44 22h10v10' fill='none' stroke='%2322c55e' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E",
+      },
+      {
+        name: "TON Blockchain",
+        image:
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e6f6ff'/%3E%3Ccircle cx='32' cy='32' r='22' fill='%230098ea'/%3E%3Cpath d='M23 22h18c2 0 3 2 2 4L33 46c-.4.8-1.6.8-2 0L21 26c-1-2 0-4 2-4z' fill='%23fff'/%3E%3Cpath d='M27 25h10l-5 6-5-6zm5 9l7-8-7 17-7-17 7 8z' fill='%230098ea'/%3E%3C/svg%3E",
+      },
+      {
+        name: "SUI Blockchain",
+        image:
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23eff8ff'/%3E%3Cpath d='M32 12c7 9 15 17 15 26 0 8-7 14-15 14s-15-6-15-14c0-9 8-17 15-26z' fill='none' stroke='%2360a5fa' stroke-width='4'/%3E%3Cpath d='M23 39c3 3 6 4 9 4s6-1 9-4' fill='none' stroke='%230284c7' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M26 31c2 2 4 3 6 3s4-1 6-3' fill='none' stroke='%2393c5fd' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E",
       },
     ],
   },
   {
-    title: "Tools",
+    title: "Tools & Delivery",
     skills: [
       {
         name: "Git",
-        image: "https://avatars.githubusercontent.com/u/18133?s=200&v=4",
+        image: "https://skillicons.dev/icons?i=git",
       },
       {
         name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      },
-      {
-        name: "Hardhat",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTse959pVUUK-P0fo7RMGOOULTikIxe_wp1pA&s",
+        image: "https://skillicons.dev/icons?i=github",
       },
       {
         name: "Vercel",
-        image: "https://www.svgrepo.com/show/327408/logo-vercel.svg",
-      },
-      {
-        name: "VS Code",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+          "https://skillicons.dev/icons?i=vercel",
       },
       {
         name: "Postman",
-        image:
-          "https://cdn.iconscout.com/icon/free/png-256/free-postman-3521648-2945092.png?f=webp",
+        image: "https://skillicons.dev/icons?i=postman",
+      },
+      {
+        name: "VS Code",
+        image: "https://skillicons.dev/icons?i=vscode",
       },
       {
         name: "Remix IDE",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEetS87oAEnL9_1ffVNOAaChBgFaWB_36Xag&s",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%236366f1'/%3E%3Cstop offset='100%25' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230f172a'/%3E%3Cpath d='M20 18h14c7 0 12 4 12 10 0 4-2 7-6 9l7 9H44l-6-8h-6v8H20V18zm12 10h3c4 0 7-1 7-4s-3-4-7-4h-3v8z' fill='url(%23g)'/%3E%3C/svg%3E",
       },
       {
-        name: "Wallets",
+        name: "Thirdweb & Sequence",
         image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJZaVpfhv3kgZA46GoqfVNIFhR6pXIdX4_Rg&s",
-      },
-      {
-        name: "Pinata",
-        image: "https://docs.pinata.cloud/img/pinata-logo.svg",
+          "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23f97316'/%3E%3Cstop offset='100%25' stop-color='%23ec4899'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%230b1020'/%3E%3Cpath d='M16 24h32v6H16zm0 10h20v6H16zm24 0h8v6h-8z' fill='url(%23g)'/%3E%3Ccircle cx='46' cy='22' r='6' fill='%23fff'/%3E%3Ccircle cx='46' cy='22' r='3' fill='%230b1020'/%3E%3C/svg%3E",
       },
     ],
   },
