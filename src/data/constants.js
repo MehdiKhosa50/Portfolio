@@ -16,6 +16,8 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/mehdikhosa/",
   twitter: "https://x.com/MehdiKhosa50",
   email: "mehdikhosa50@gmail.com",
+  emailLink:
+    "https://mail.google.com/mail/?view=cm&fs=1&to=mehdikhosa50@gmail.com",
   whatsapp: "https://wa.me/923176202271",
   telegram: "https://t.me/dappengineer50",
 };

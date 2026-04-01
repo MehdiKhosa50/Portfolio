@@ -254,7 +254,7 @@ const contactItems = [
   {
     name: 'Email',
     value: Bio.email,
-    href: `mailto:${Bio.email}`,
+    href: Bio.emailLink,
     accent: 'linear-gradient(180deg, #7c3aed, #4c1d95)',
     icon: FaEnvelope,
   },
@@ -294,10 +294,6 @@ const Contact = () => {
         <ContactPanel>
           <ContactEyebrow>Direct Reach</ContactEyebrow>
           <ContactHeadline>Open to strong product teams, Web3 builds, and serious freelance work.</ContactHeadline>
-          <ContactText>
-            This section replaces the old contact form with fast direct channels recruiters and technical teams actually use.
-            Hover the icons to preview each contact method, then click to open it.
-          </ContactText>
 
           {/* Previous Email Me form intentionally commented out per request.
           <ContactForm ref={form} onSubmit={handleSubmit} onChange={checkFormValidity}>
@@ -340,7 +336,7 @@ const Contact = () => {
           </DockShell>
 
           <QuickGrid>
-            <QuickCard href={`mailto:${Bio.email}`}>
+            <QuickCard href={Bio.emailLink} target="_blank" rel="noreferrer">
               <QuickLabel>Email</QuickLabel>
               <QuickValue>{Bio.email}</QuickValue>
             </QuickCard>

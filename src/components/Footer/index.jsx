@@ -1,8 +1,4 @@
 import styled from 'styled-components';
-import GithubInIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Bio } from '../../data/constants';
 
 const FooterContainer = styled.div`
   width: 100%;
@@ -95,11 +91,6 @@ function Footer() {
           <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
         </Nav>
-        <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.twitter} target="display"><TwitterIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
-          <SocialMediaIcon href={Bio.github} target="display"><GithubInIcon /></SocialMediaIcon>
-        </SocialMediaIcons>
         <Copyright>
           &copy; 2024 Muhammad Muntazir Mehdi. All rights reserved.
         </Copyright>
