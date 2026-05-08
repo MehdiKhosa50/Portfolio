@@ -96,7 +96,7 @@ function Footer() {
     <FooterContainer>
       <FooterWrapper>
         <Logo>
-          Muhammad Muntazir Mehdi
+          Mehdi Khosa
           <span>Full-stack | Blockchain | AI systems</span>
         </Logo>
         <Nav aria-label="Footer navigation">

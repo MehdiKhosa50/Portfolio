@@ -42,7 +42,7 @@ const HeroSection = () => {
             Software Engineer | Blockchain & AI Systems
           </Eyebrow>
           <Title>
-            Building fast Web3 and AI products <span className="name">{Bio.name}</span>.
+            Building fast Web3 and AI products as <span className="name">{Bio.name}</span>.
           </Title>
           <TextLoop>
             Focused on

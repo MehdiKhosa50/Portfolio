@@ -1,5 +1,5 @@
 export const Bio = {
-  name: "M. Muntazir Mehdi",
+  name: "Mehdi Khosa",
   roles: [
     "Software Engineer",
     "Blockchain Engineer",
@@ -265,7 +265,7 @@ export const projects = [
     webapp: "https://budsignal.io/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -283,7 +283,7 @@ export const projects = [
     webapp: "https://trading-alerts-frontend-orpin.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -301,7 +301,7 @@ export const projects = [
     webapp: "https://bcoin-bets.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -328,7 +328,7 @@ export const projects = [
       "https://polygonscan.com/address/0xde283d30ee617b900697b45f816cb8f9e22a5167#code",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -354,7 +354,7 @@ export const projects = [
     webapp: "https://paxg-fe.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -382,7 +382,7 @@ export const projects = [
     webapp: "https://katanainu-reward-system.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -409,7 +409,7 @@ export const projects = [
       "https://suiscan.xyz/testnet/object/0x508725e3b66a818544d166e09b7cdf3289e16e7d25931ec54cbd01fe30c682b1/tx-blocks",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -435,7 +435,7 @@ export const projects = [
     webapp: "https://t.me/hamsterkomat_bot",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -461,7 +461,7 @@ export const projects = [
       "https://testnet.tonscan.org/jetton/kQAWLhT6AdrxQWPguv0759aleoPm70y2Cg7XGoOUKafp2QKn#transactions",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -487,7 +487,7 @@ export const projects = [
       "https://testnet.tonscan.org/address/0QCCOmbN2JjxQAvyXqYB6NLMcVUOikf_YVgHJFoAiESLkbnp#nfts",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -514,7 +514,7 @@ export const projects = [
     webapp: "https://testnets.opensea.io/collection/mytoken-11309",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -542,7 +542,7 @@ export const projects = [
     webapp: "https://lively-guinea-pig-41628.sequence.market/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -570,7 +570,7 @@ export const projects = [
       "https://thirdweb.com/ethereum/0x31e189E2595007Fe911c64e5fa53be2ed9A21aCA",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -602,7 +602,7 @@ export const projects = [
     webapp: "https://peoplesdex.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -632,7 +632,7 @@ export const projects = [
     webapp: "https://solana-token-minter-njbp.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -662,7 +662,7 @@ export const projects = [
     webapp: "https://solana-todoapp.vercel.app/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -681,7 +681,7 @@ export const projects = [
     webapp: "https://www.mehdikhosa.xyz/",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -709,7 +709,7 @@ export const projects = [
       "https://github.com/MehdiKhosa50/Creating-a-Blockchain-from-Scratch-with-Javascript",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -727,7 +727,7 @@ export const projects = [
     github: "https://github.com/MehdiKhosa50/PeoplesStakingDapp",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -752,7 +752,7 @@ export const projects = [
     github: "https://github.com/MehdiKhosa50/Flash-Loans",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -770,7 +770,7 @@ export const projects = [
     github: "https://github.com/MehdiKhosa50/TrustFundDAO",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
@@ -788,7 +788,7 @@ export const projects = [
     github: "https://github.com/MehdiKhosa50/ShoppingWebsite",
     member: [
       {
-        name: "Muhammad Muntazir Mehdi",
+        name: "Mehdi Khosa",
         img: "https://i.ibb.co/6sHP0Hm/Whats-App-Image-2024-07-05-at-10-07-13-PM.jpg",
         github: "https://github.com/MehdiKhosa50",
         linkedin: "https://www.linkedin.com/in/mehdikhosa/",
