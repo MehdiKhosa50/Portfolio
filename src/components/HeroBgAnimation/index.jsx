@@ -6,237 +6,98 @@ const HeroBgAnimation = () => {
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const context = canvas.getContext('2d');
     let animationId;
+    let width = 0;
+    let height = 0;
+    let dpr = window.devicePixelRatio || 1;
+    const lines = [];
 
-    // Set canvas size
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
+    const createLine = () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      length: 80 + Math.random() * 170,
+      speed: 0.45 + Math.random() * 1.15,
+      angle: Math.random() > 0.5 ? 0 : Math.PI / 2,
+      hue: Math.random() > 0.45 ? 185 : Math.random() > 0.5 ? 155 : 38,
+      alpha: 0.2 + Math.random() * 0.35,
+    });
+
+    const resize = () => {
+      dpr = window.devicePixelRatio || 1;
+      width = canvas.offsetWidth;
+      height = canvas.offsetHeight;
+      canvas.width = Math.floor(width * dpr);
+      canvas.height = Math.floor(height * dpr);
+      context.setTransform(dpr, 0, 0, dpr, 0, 0);
+      lines.length = 0;
+      const count = window.innerWidth < 720 ? 32 : 54;
+      for (let index = 0; index < count; index += 1) {
+        lines.push(createLine());
+      }
     };
-    resizeCanvas();
-    window.addEventListener('resize', resizeCanvas);
 
-    // Particle system
-    class Particle {
-      constructor(x, y, type = 'orb') {
-        this.x = x;
-        this.y = y;
-        this.type = type;
-        this.size = Math.random() * 3 + 1;
-        this.speedX = (Math.random() - 0.5) * 2;
-        this.speedY = (Math.random() - 0.5) * 2;
-        this.life = 1;
-        this.decay = Math.random() * 0.02 + 0.005;
-        this.angle = Math.random() * Math.PI * 2;
-        this.angleSpeed = (Math.random() - 0.5) * 0.1;
-        this.color = type === 'orb' ? 
-          `hsl(${Math.random() * 60 + 250}, 70%, 60%)` : 
-          `hsl(${Math.random() * 60 + 180}, 80%, 50%)`;
-      }
+    const draw = () => {
+      context.clearRect(0, 0, width, height);
+      context.lineCap = 'round';
 
-      update() {
-        this.x += this.speedX;
-        this.y += this.speedY;
-        this.angle += this.angleSpeed;
-        this.life -= this.decay;
+      lines.forEach((line, index) => {
+        const dx = Math.cos(line.angle) * line.length;
+        const dy = Math.sin(line.angle) * line.length;
+        const gradient = context.createLinearGradient(line.x, line.y, line.x + dx, line.y + dy);
+        gradient.addColorStop(0, `hsla(${line.hue}, 88%, 58%, 0)`);
+        gradient.addColorStop(0.5, `hsla(${line.hue}, 88%, 58%, ${line.alpha})`);
+        gradient.addColorStop(1, `hsla(${line.hue}, 88%, 58%, 0)`);
 
-        // Desktop: Keep particles in left 60% of screen
-        const maxX = window.innerWidth <= 960 ? canvas.width : canvas.width * 0.6;
-        
-        // Bounce off edges
-        if (this.x < 0 || this.x > maxX) this.speedX *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+        context.strokeStyle = gradient;
+        context.lineWidth = 1.4;
+        context.beginPath();
+        context.moveTo(line.x, line.y);
+        context.lineTo(line.x + dx, line.y + dy);
+        context.stroke();
 
-        // Wrap around
-        if (this.x < 0) this.x = 0;
-        if (this.x > maxX) this.x = maxX;
-        if (this.y < 0) this.y = canvas.height;
-        if (this.y > canvas.height) this.y = 0;
-      }
+        context.fillStyle = `hsla(${line.hue}, 88%, 58%, ${line.alpha + 0.12})`;
+        context.fillRect(line.x + dx * 0.52, line.y + dy * 0.52, 3, 3);
 
-      draw() {
-        ctx.save();
-        ctx.globalAlpha = this.life;
-        
-        if (this.type === 'orb') {
-          // Draw glowing orb
-          const gradient = ctx.createRadialGradient(
-            this.x, this.y, 0,
-            this.x, this.y, this.size * 3
-          );
-          gradient.addColorStop(0, this.color);
-          gradient.addColorStop(0.5, this.color.replace('60%)', '30%)'));
-          gradient.addColorStop(1, 'transparent');
-          
-          ctx.fillStyle = gradient;
-          ctx.beginPath();
-          ctx.arc(this.x, this.y, this.size * 3, 0, Math.PI * 2);
-          ctx.fill();
-        } else {
-          // Draw data stream
-          ctx.strokeStyle = this.color;
-          ctx.lineWidth = this.size;
-          ctx.beginPath();
-          ctx.moveTo(this.x, this.y);
-          ctx.lineTo(
-            this.x + Math.cos(this.angle) * 20,
-            this.y + Math.sin(this.angle) * 20
-          );
-          ctx.stroke();
-        }
-        
-        ctx.restore();
-      }
-    }
+        line.x += Math.cos(line.angle) * line.speed;
+        line.y += Math.sin(line.angle) * line.speed;
 
-    // Neural network connections
-    class Connection {
-      constructor(particle1, particle2) {
-        this.particle1 = particle1;
-        this.particle2 = particle2;
-        this.life = 1;
-        this.decay = 0.01;
-      }
-
-      update() {
-        this.life -= this.decay;
-      }
-
-      draw() {
-        const distance = Math.sqrt(
-          Math.pow(this.particle1.x - this.particle2.x, 2) +
-          Math.pow(this.particle1.y - this.particle2.y, 2)
-        );
-
-        if (distance < 150 && this.life > 0) {
-          ctx.save();
-          ctx.globalAlpha = this.life * (1 - distance / 150);
-          ctx.strokeStyle = `rgba(133, 76, 230, ${this.life * 0.3})`;
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(this.particle1.x, this.particle1.y);
-          ctx.lineTo(this.particle2.x, this.particle2.y);
-          ctx.stroke();
-          ctx.restore();
-        }
-      }
-    }
-
-    // Initialize particles
-    const particles = [];
-    const connections = [];
-    
-    // Create orbs - only in left area on desktop
-    const maxX = window.innerWidth <= 960 ? window.innerWidth : window.innerWidth * 0.6;
-    
-    for (let i = 0; i < 30; i++) {
-      particles.push(new Particle(
-        Math.random() * maxX,
-        Math.random() * window.innerHeight,
-        'orb'
-      ));
-    }
-
-    // Create data streams - only in left area on desktop
-    for (let i = 0; i < 50; i++) {
-      particles.push(new Particle(
-        Math.random() * maxX,
-        Math.random() * window.innerHeight,
-        'stream'
-      ));
-    }
-
-    // Animation loop
-    const animate = () => {
-      ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      // Update and draw particles
-      particles.forEach((particle, index) => {
-        particle.update();
-        particle.draw();
-
-        // Remove dead particles and create new ones
-        if (particle.life <= 0) {
-          const newMaxX = window.innerWidth <= 960 ? window.innerWidth : window.innerWidth * 0.6;
-          particles[index] = new Particle(
-            Math.random() * newMaxX,
-            Math.random() * window.innerHeight,
-            particle.type
-          );
+        if (line.x > width + line.length || line.y > height + line.length) {
+          lines[index] = {
+            ...createLine(),
+            x: Math.random() * width * 0.35,
+            y: Math.random() * height * 0.35,
+          };
         }
       });
 
-      // Create connections between nearby orbs
-      connections.length = 0;
-      for (let i = 0; i < particles.length; i++) {
-        if (particles[i].type === 'orb') {
-          for (let j = i + 1; j < particles.length; j++) {
-            if (particles[j].type === 'orb') {
-              connections.push(new Connection(particles[i], particles[j]));
-            }
-          }
-        }
-      }
-
-      // Update and draw connections
-      connections.forEach(connection => {
-        connection.update();
-        connection.draw();
-      });
-
-      // Draw gradient overlay - only on left side for desktop
-      const gradient = ctx.createLinearGradient(0, 0, maxX, canvas.height);
-      gradient.addColorStop(0, 'rgba(133, 76, 230, 0.1)');
-      gradient.addColorStop(0.5, 'rgba(19, 173, 199, 0.1)');
-      gradient.addColorStop(1, 'rgba(148, 93, 214, 0.1)');
-      
-      ctx.fillStyle = gradient;
-      ctx.fillRect(0, 0, maxX, canvas.height);
-
-      animationId = requestAnimationFrame(animate);
+      animationId = requestAnimationFrame(draw);
     };
 
-    animate();
+    resize();
+    draw();
+    window.addEventListener('resize', resize);
 
     return () => {
-      window.removeEventListener('resize', resizeCanvas);
+      window.removeEventListener('resize', resize);
       cancelAnimationFrame(animationId);
     };
   }, []);
 
   return (
     <Div>
-      <canvas
-        ref={canvasRef}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: -1,
-        }}
-      />
-      
-      {/* Floating geometric shapes */}
-      <div className="floating-shapes">
-        <div className="shape shape-1"></div>
-        <div className="shape shape-2"></div>
-        <div className="shape shape-3"></div>
-        <div className="shape shape-4"></div>
-        <div className="shape shape-5"></div>
-      </div>
-
-      {/* Data grid overlay */}
-      <div className="data-grid"></div>
-
-      {/* Pulse rings */}
-      <div className="pulse-rings">
-        <div className="ring ring-1"></div>
-        <div className="ring ring-2"></div>
-        <div className="ring ring-3"></div>
+      <canvas ref={canvasRef} />
+      <div className="mesh-plane" />
+      <div className="terminal-stack" aria-hidden="true">
+        <div className="signal-card">
+          <span className="card-line" />
+          <span className="card-line mid" />
+          <span className="card-line short" />
+        </div>
+        <div className="signal-card">
+          <span className="card-line mid" />
+          <span className="card-line short" />
+        </div>
       </div>
     </Div>
   );

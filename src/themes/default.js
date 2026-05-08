@@ -4,17 +4,17 @@ const defaultTheme = {
       title: "Space Grotesk, sans-serif",
       main: "Space Grotesk, sans-serif"
     },
-    // Colors for layout - Futuristic Dark Theme
+    // Colors for layout - aligned with the active portfolio theme.
     colors: {
-      primary1: "#854CE6",
-      background1: "#0a0a0a",
-      button: "#854CE6",
-      background2: "#1a1a2e",
-      text: "#E8E8E8",
-      text1: "#FFFFFF",
-      text2: "#B8B8B8",
-      text3: "#888888",
-      footerBackground: "#000000"
+      primary1: "#22d3ee",
+      background1: "#070a0f",
+      button: "#22d3ee",
+      background2: "#111827",
+      text: "#f8fafc",
+      text1: "#ffffff",
+      text2: "#a7b0c2",
+      text3: "#758098",
+      footerBackground: "#070a0f"
     },
     // Breakpoints for responsive design
     breakpoints: {

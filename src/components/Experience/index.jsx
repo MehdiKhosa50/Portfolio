@@ -1,106 +1,119 @@
-
-import React from 'react'
-import styled from 'styled-components'
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
+import React from 'react';
+import styled from 'styled-components';
+import { FaBriefcase } from 'react-icons/fa';
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
 
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-    padding: 40px 0px 80px 0px;
-    @media (max-width: 960px) {
-        padding: 0px;
-    }
+const Container = styled.section`
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 64px 20px 92px;
 `;
 
 const Wrapper = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1350px;
-    padding: 80px 0;
-    gap: 12px;
-    @media (max-width: 960px) {
-        flex-direction: column;
-    }
+  width: 100%;
+  max-width: 1120px;
 `;
 
-const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
+const Title = styled.h2`
   color: ${({ theme }) => theme.text_primary};
+  font-size: 42px;
+  text-align: center;
+  font-weight: 800;
+
   @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
+    font-size: 32px;
   }
 `;
 
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
+const Desc = styled.p`
+  max-width: 760px;
+  margin: 14px auto 0;
+  color: ${({ theme }) => theme.text_secondary};
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: center;
 `;
 
 const TimelineSection = styled.div`
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+  position: relative;
+  display: grid;
+  gap: 18px;
+  margin-top: 36px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 16px;
+    bottom: 16px;
+    width: 2px;
+    background: ${({ theme }) => theme.gradient};
+    opacity: 0.5;
+  }
+
+  @media (max-width: 720px) {
+    &::before {
+      left: 20px;
+    }
+  }
 `;
 
+const TimelineItem = styled.div`
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  animation: sectionRise 420ms ease both;
+  animation-delay: ${({ $index }) => `${$index * 80}ms`};
 
+  @media (max-width: 720px) {
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+  }
+`;
 
-const index = () => {
-    return (
-        <Container id="experience">
-            <Wrapper>
-                <Title>Experience</Title>
-                <Desc>
-                I have worked as a Blockchain Engineer at Vanar and am currently employed at ArgonTeq Inc.. Additionally, I have contributed to various projects across different blockchain stacks, gaining extensive experience in the field.
-                </Desc>
-                <TimelineSection>
-                    <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" style={{color: "white"}}/>
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience}/>
-                                </TimelineContent>
-                            </TimelineItem>
-                        ))}
-                    </Timeline>
+const Dot = styled.div`
+  position: relative;
+  z-index: 1;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  color: ${({ theme }) => theme.bg};
+  background: ${({ theme }) => theme.gradient};
+  box-shadow: 0 18px 42px rgba(34, 211, 238, 0.22);
 
-                </TimelineSection>
-            </Wrapper>
-        </Container>
-    )
-}
+  @media (max-width: 720px) {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+`;
 
-export default index
+const Experience = () => (
+  <Container id="experience">
+    <Wrapper>
+      <Title>Experience</Title>
+      <Desc>
+        Professional engineering work across full-stack platforms, blockchain systems, audits,
+        smart contracts, trading products, and automation-heavy delivery.
+      </Desc>
+      <TimelineSection>
+        {experiences.map((experience, index) => (
+          <TimelineItem key={experience.id} $index={index}>
+            <Dot>
+              <FaBriefcase />
+            </Dot>
+            <ExperienceCard experience={experience} />
+          </TimelineItem>
+        ))}
+      </TimelineSection>
+    </Wrapper>
+  </Container>
+);
+
+export default Experience;

@@ -1,193 +1,151 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const Document = styled.img`
-    display: none;
-    height: 200px;
-    width: 350px;
-    background-color: #000;
-    border-radius: 10px;
-@media only screen and (max-width: 420px){
-    height: 150px;
-    width: 250px;
-    }
+  width: 100%;
+  max-height: 210px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid ${({ theme }) => theme.border};
+  transition: transform 180ms ease, opacity 180ms ease;
 
-
-
-    &:hover{
-        cursor: pointer;
-        opacity: 0.8;
-    }
-`
+  &:hover {
+    opacity: 0.86;
+    transform: scale(1.01);
+  }
+`;
 
 const Description = styled.div`
-    width: 100%;
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    margin-bottom: 10px;
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+  color: ${({ theme }) => theme.text_secondary};
+  font-size: 15px;
+  line-height: 1.7;
+`;
 
-const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
-`
+const Card = styled.article`
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 24px;
+  background: ${({ theme }) => theme.card};
+  box-shadow: 0 18px 52px ${({ theme }) => (theme.mode === 'dark' ? 'rgba(0,0,0,0.24)' : 'rgba(15,23,42,0.08)')};
+  overflow: hidden;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 
-const Card = styled.div`
-    width: 650px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 12px 16px;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    transition: all 0.3s ease-in-out;
-    &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
-    }
-    @media only screen and (max-width: 768px){
-        padding: 10px;
-        gap: 8px;
-        width: 300px;
-    }
-
-    &:hover ${Document}{
-        display: flex;
-    }
-
-    &:hover ${Span}{
-        overflow: visible;
-        -webkit-line-clamp: unset;
-
-    }
-
-    border: 0.1px solid #306EE8;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-`
+  &:hover {
+    transform: translateY(-5px);
+    border-color: ${({ theme }) => theme.borderStrong};
+    background: ${({ theme }) => theme.cardSolid};
+  }
+`;
 
 const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px
-`
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 16px;
+`;
 
 const Image = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
-`
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid ${({ theme }) => theme.border};
+  background: ${({ theme }) => theme.surface};
+`;
 
 const Body = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column; 
-`
+  min-width: 0;
+`;
 
-
-const Role = styled.div`
-    font-size: 18px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 14px;
-    }
-`
+const Role = styled.h3`
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 800;
+`;
 
 const Company = styled.div`
-    font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+  margin-top: 4px;
+  color: ${({ theme }) => theme.primary};
+  font-size: 14px;
+  font-weight: 800;
+`;
 
 const Date = styled.div`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
-
+  margin-top: 5px;
+  color: ${({ theme }) => theme.text_muted};
+  font-size: 13px;
+  font-weight: 700;
+`;
 
 const Skills = styled.div`
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    margin-top: -10px;
-`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+`;
 
-const ItemWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+const Skill = styled.span`
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 5px 9px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 999px;
+  color: ${({ theme }) => theme.text_primary};
+  background: ${({ theme }) => theme.gradientSoft};
+  font-size: 12px;
+  font-weight: 800;
+`;
+
+const DocLink = styled.a`
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+  color: ${({ theme }) => theme.text_primary};
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 800;
+
+  span {
+    display: inline-flex;
+    align-items: center;
     gap: 8px;
-`
+  }
+`;
 
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
+const ExperienceCard = ({ experience }) => (
+  <Card>
+    <Top>
+      <Image src={experience.img} alt={experience.company} loading="lazy" />
+      <Body>
+        <Role>{experience.role}</Role>
+        <Company>{experience.company}</Company>
+        <Date>{experience.date}</Date>
+      </Body>
+    </Top>
+    <Description>{experience.desc}</Description>
+    {experience.skills && (
+      <Skills>
+        {experience.skills.map((skill) => (
+          <Skill key={skill}>{skill}</Skill>
+        ))}
+      </Skills>
+    )}
+    {experience.doc && (
+      <DocLink href={experience.doc} target="_blank" rel="noreferrer">
+        <span>
+          View certificate
+          <FaExternalLinkAlt />
+        </span>
+        <Document src={experience.doc} alt={`${experience.company} certificate`} loading="lazy" />
+      </DocLink>
+    )}
+  </Card>
+);
 
-
-
-const ExperienceCard = ({ experience }) => {
-    return (
-        <Card>
-            <Top>
-                <Image src={experience.img} />
-                <Body>
-                    <Role>{experience.role}</Role>
-                    <Company>{experience.company}</Company>
-                    <Date>{experience.date}</Date>
-                </Body>
-            </Top>
-            <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
-
-                }
-                {experience?.skills &&
-                    <>
-                        <br />
-                        <Skills>
-                            <b>Skills:</b>
-                            <ItemWrapper>
-                                {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
-                                ))}
-                            </ItemWrapper>
-                        </Skills>
-                    </>
-                }
-            </Description>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
-                    <Document src={experience.doc} />
-                </a>
-            }
-        </Card>
-    )
-}
-
-export default ExperienceCard
+export default ExperienceCard;

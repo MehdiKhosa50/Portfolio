@@ -1,160 +1,217 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
+import { FaArrowRight } from 'react-icons/fa';
 
+const Card = styled.article`
+  position: relative;
+  min-height: 520px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 26px;
+  background: ${({ theme }) => theme.card};
+  box-shadow: 0 20px 58px ${({ theme }) => (theme.mode === 'dark' ? 'rgba(0,0,0,0.24)' : 'rgba(15,23,42,0.08)')};
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transform-style: preserve-3d;
+  animation: sectionRise 420ms ease both;
+  animation-delay: ${({ $index }) => `${($index % 6) * 55}ms`};
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 
-const Button = styled.button`
-    display: none;
-    width: 100%;
-    padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.8s ease-in-out;
-`
-const Card = styled.div`
-    width: 330px;
-    height: 490px;
-    background-color: ${({ theme }) => theme.card};
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
-    overflow: hidden;
-    padding: 26px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    transition: all 0.5s ease-in-out;
-    &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
-    }
-    &:hover ${Button} {
-        display: block;
-    }
-`
+  &:hover {
+    transform: perspective(1000px) rotateX(4deg) rotateY(-4deg) translateY(-7px);
+    border-color: ${({ theme }) => theme.borderStrong};
+    background: ${({ theme }) => theme.cardSolid};
+  }
+`;
+
+const MediaWrap = styled.div`
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  background: ${({ theme }) => theme.surface};
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 44%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.54), transparent);
+    pointer-events: none;
+  }
+`;
 
 const Image = styled.img`
-    width: 100%;
-    height: 180px;
-    background-color: ${({ theme }) => theme.white};
-    border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
-`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 360ms ease;
+
+  ${Card}:hover & {
+    transform: scale(1.06);
+  }
+`;
+
+const Video = styled.video`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+const Category = styled.span`
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 1;
+  max-width: calc(100% - 28px);
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: ${({ theme }) => theme.bg};
+  background: ${({ theme }) => theme.gradient};
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: capitalize;
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+`;
 
 const Tags = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 4px;
-`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
 
 const Tag = styled.span`
-    font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
-    border-radius: 10px;
-`
+  padding: 5px 8px;
+  border: 1px solid ${({ theme }) => theme.border};
+  border-radius: 999px;
+  color: ${({ theme }) => theme.text_secondary};
+  background: ${({ theme }) => (theme.mode === 'dark' ? 'rgba(255,255,255,0.045)' : 'rgba(15,23,42,0.035)')};
+  font-size: 11px;
+  font-weight: 800;
+`;
 
 const Details = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    padding: 0px 2px;
-`
-const Title = styled.div`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_secondary};
-    overflow: hidden;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-`
+  display: grid;
+  gap: 8px;
+`;
 
-const Date = styled.div`
-    font-size: 12px;
-    margin-left: 2px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
-    @media only screen and (max-width: 768px){
-        font-size: 10px;
-    }
-`
+const Title = styled.h3`
+  color: ${({ theme }) => theme.text_primary};
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 800;
+`;
 
+const Description = styled.p`
+  color: ${({ theme }) => theme.text_secondary};
+  font-size: 14px;
+  line-height: 1.65;
+  overflow: hidden;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+`;
 
-const Description = styled.div`
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
-    overflow: hidden;
-    margin-top: 8px;
-    display: -webkit-box;
-    max-width: 100%;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-`
+const Footer = styled.div`
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+`;
 
 const Members = styled.div`
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-`
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+`;
+
 const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    margin-left: -10px;
-    background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
-`
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: -10px;
+  object-fit: cover;
+  border: 2px solid ${({ theme }) => theme.cardSolid};
+  background: ${({ theme }) => theme.surface};
+`;
 
-const ProjectCards = ({ project, setOpenModal }) => {
-    return (
-        <Card onClick={() => setOpenModal({ state: true, project })}>
-            {project.video ? (
-                <video
-                    src={project.video}
-                    controls
-                    poster={project.thumbnail} // 👈 Thumbnail here
-                    style={{ width: "100%", borderRadius: "10px" }}
-                />
-            ) : (
-                <Image src={project.image} alt={project.title} />
-            )}
+const OpenCue = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: ${({ theme }) => theme.primary};
+  font-size: 13px;
+  font-weight: 900;
+`;
 
-            <Tags>
-                {project.tags?.map((tag, index) => (
-                    <Tag key={index}>{tag}</Tag>
-                ))}
-            </Tags>
-
-            <Details>
-                <Title>{project.title}</Title>
-                <Date>{project.date}</Date>
-                <Description>{project.description}</Description>
-            </Details>
-
-            <Members>
-                {project.member?.map((member, index) => (
-                    <Avatar key={index} src={member.img} />
-                ))}
-            </Members>
-        </Card>
-    );
+const getCategoryLabel = (category) => {
+  if (Array.isArray(category)) return category[0];
+  return category || 'project';
 };
 
-export default ProjectCards
+const ProjectCards = ({ project, setOpenModal, index = 0 }) => (
+  <Card
+    $index={index}
+    onClick={() => setOpenModal({ state: true, project })}
+    role="button"
+    tabIndex={0}
+    onKeyDown={(event) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        setOpenModal({ state: true, project });
+      }
+    }}
+  >
+    <MediaWrap>
+      {project.video ? (
+        <Video
+          src={project.video}
+          poster={project.thumbnail}
+          muted
+          playsInline
+          preload="metadata"
+        />
+      ) : (
+        <Image src={project.image} alt={project.title} loading="lazy" />
+      )}
+      <Category>{getCategoryLabel(project.category)}</Category>
+    </MediaWrap>
+
+    <Content>
+      <Tags>
+        {project.tags?.slice(0, 6).map((tag) => (
+          <Tag key={tag}>{tag}</Tag>
+        ))}
+      </Tags>
+
+      <Details>
+        <Title>{project.title}</Title>
+        <Description>{project.description}</Description>
+      </Details>
+
+      <Footer>
+        <Members>
+          {project.member?.map((member) => (
+            <Avatar key={member.name} src={member.img} alt={member.name} loading="lazy" />
+          ))}
+        </Members>
+        <OpenCue>
+          Case
+          <FaArrowRight />
+        </OpenCue>
+      </Footer>
+    </Content>
+  </Card>
+);
+
+export default ProjectCards;
