@@ -101,13 +101,9 @@ const HeroSection = () => {
             <PortraitShell>
               <Img src={HeroImg} alt={Bio.name} />
             </PortraitShell>
-            <FloatingBadge $left="-28px" $top="38px">
-              <strong>Blockchain engineering</strong>
-              <span>Smart contracts, dApps, marketplaces, DeFi, TON, SUI, Solana</span>
-            </FloatingBadge>
             <FloatingBadge $right="-30px" $bottom="48px">
               <strong>AI + automation</strong>
-              <span>Trading alerts, Telegram bots, data workflows, product backends</span>
+              <span>TradingView Indicators, Forex Expert Advisors, Trading bots, Crypto Signals</span>
             </FloatingBadge>
           </ProfileStage>
         </HeroRightContainer>
