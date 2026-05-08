@@ -225,23 +225,23 @@ export const education = [
     id: 0,
     img: "https://upload.wikimedia.org/wikipedia/commons/f/f5/Government_College_University%2CLogo.png",
     school: "GC University, Lahore, Pakistan",
-    date: "OCT 2020 - June 2024",
-    degree: "Bachelor of Computer Science",
+    date: "OCT 2020 - JUN 2024",
+    degree: "BS Computer Science",
   },
   {
     id: 1,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGLKReKBFLKJ5vW85-GPt_kJHGrWVvnO-mXg&s",
-    school: "Govt. Degree College Block#17 DG Khan , Punjab",
-    date: "2018 - 2020",
+    school: "Govt. Degree College, DG Khan, Punjab",
+    date: "AUG 2018 - JUN 2020",
     degree: "FSC Engineering",
   },
 
   {
     id: 2,
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJJXx-IJOzADjdzg8AXJMxbVEbTicYHtyE_g&s",
-    school: "Govt. City high School Block #10, DG Khan, Punjab",
-    date: "2016 - 2018",
-    degree: "Matric in Computer Science",
+    school: "Govt. City High School, DG Khan, Punjab",
+    date: "AUG 2016 - MAY 2018",
+    degree: "Matric Computer Science",
   },
 ];
 
