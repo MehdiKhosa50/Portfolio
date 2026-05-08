@@ -5,11 +5,16 @@
 /.pnp
 .pnp.js
 
+# pnpm
+.pnpm-store
+
 # testing
 /coverage
 
 # production
 /build
+/dist
+/build-check
 
 # misc
 .DS_Store
@@ -18,6 +23,13 @@
 .env.test.local
 .env.production.local
 
+# IDE
+.vscode
+.idea
+
+# OS
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.DS_Store
+Thumbs.db
