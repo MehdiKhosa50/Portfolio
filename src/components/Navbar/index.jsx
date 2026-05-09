@@ -45,28 +45,57 @@ const Navbar = ({ darkMode, onToggleTheme }) => {
   const sectionIds = useMemo(() => navItems.map((item) => item.id), []);
 
   useEffect(() => {
-    const sections = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
+    let ticking = false;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntry = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    const getSections = () =>
+      sectionIds
+        .map((id) => document.getElementById(id))
+        .filter(Boolean);
 
-        if (visibleEntry?.target?.id) {
-          setActiveSection(visibleEntry.target.id);
+    const updateActiveSection = () => {
+      const sections = getSections();
+      const activationLine = Math.min(window.innerHeight * 0.34, 280);
+      let currentSection = sections[0]?.id || 'about';
+      let nearestDistance = Number.POSITIVE_INFINITY;
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+
+        if (rect.top <= activationLine && rect.bottom > activationLine) {
+          currentSection = section.id;
+          nearestDistance = 0;
+          return;
         }
-      },
-      {
-        rootMargin: '-20% 0px -55% 0px',
-        threshold: [0.1, 0.25, 0.5],
-      }
-    );
 
-    sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+        if (nearestDistance !== 0) {
+          const distance = Math.abs(rect.top - activationLine);
+
+          if (distance < nearestDistance) {
+            nearestDistance = distance;
+            currentSection = section.id;
+          }
+        }
+      });
+
+      setActiveSection((current) => (current === currentSection ? current : currentSection));
+      ticking = false;
+    };
+
+    const requestUpdate = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateActiveSection);
+        ticking = true;
+      }
+    };
+
+    updateActiveSection();
+    window.addEventListener('scroll', requestUpdate, { passive: true });
+    window.addEventListener('resize', requestUpdate);
+
+    return () => {
+      window.removeEventListener('scroll', requestUpdate);
+      window.removeEventListener('resize', requestUpdate);
+    };
   }, [sectionIds]);
 
   const navigateToSection = (sectionId) => {
